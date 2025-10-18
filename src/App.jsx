@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 
-// API endpoints - using proxy to avoid CORS issues
-const BOOTSTRAP_API = '/api/bootstrap-static/'
-const LEAGUE_API = '/api/leagues-classic/286461/standings/'
-const MANAGER_HISTORY_API = '/api/entry/{team_id}/history/'
+// API endpoints - using serverless functions for production, proxy for development
+const BOOTSTRAP_API = '/api/bootstrap-static'
+const LEAGUE_API = '/api/leagues-classic/286461/standings'
+const MANAGER_HISTORY_API = '/api/entry/{team_id}/history'
 
 function App() {
   // Define the 5 two-month periods
