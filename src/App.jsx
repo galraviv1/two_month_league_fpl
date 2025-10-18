@@ -15,8 +15,22 @@ function App() {
     { id: 'apr-may', name: 'April + May', months: [4, 5] }
   ]
 
+  // Helper function to determine current period based on today's date
+  const getCurrentPeriodId = () => {
+    const currentMonth = new Date().getMonth() + 1 // 1-12
+    
+    if (currentMonth === 8 || currentMonth === 9) return 'aug-sep'
+    if (currentMonth === 10 || currentMonth === 11) return 'oct-nov'
+    if (currentMonth === 12 || currentMonth === 1) return 'dec-jan'
+    if (currentMonth === 2 || currentMonth === 3) return 'feb-mar'
+    if (currentMonth === 4 || currentMonth === 5) return 'apr-may'
+    
+    // Default fallback to August + September (start of season)
+    return 'aug-sep'
+  }
+
   // State management
-  const [selectedPeriod, setSelectedPeriod] = useState(periods[0].id)
+  const [selectedPeriod, setSelectedPeriod] = useState(getCurrentPeriodId())
   const [standings, setStandings] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
