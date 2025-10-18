@@ -192,19 +192,19 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-screen bg-gray-50 py-4 sm:py-8 px-3 sm:px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             FPL 2-Month League Standings
           </h1>
-          <p className="text-gray-600">League ID: 286461 • Season 2024/25</p>
+          <p className="text-sm sm:text-base text-gray-600">League ID: 286461 • Season 2024/25</p>
         </div>
 
         {/* Period Selector */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <label htmlFor="period-select" className="block text-lg font-semibold text-gray-700 mb-3">
+        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-4 sm:mb-6">
+          <label htmlFor="period-select" className="block text-base sm:text-lg font-semibold text-gray-700 mb-3">
             Select 2-Month Period:
           </label>
           <select
@@ -212,7 +212,7 @@ function App() {
             value={selectedPeriod}
             onChange={handlePeriodChange}
             disabled={loading && !allData}
-            className="w-full px-4 py-3 text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+            className="w-full px-3 sm:px-4 py-2 sm:py-3 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
           >
             {periods.map(period => (
               <option key={period.id} value={period.id}>
@@ -248,8 +248,8 @@ function App() {
         {/* Standings Table */}
         {!loading && !error && standings.length > 0 && (
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-4">
-              <h2 className="text-2xl font-bold text-white">
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-4 sm:px-6 py-3 sm:py-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
                 {getCurrentPeriodName()} Standings
               </h2>
             </div>
@@ -257,16 +257,16 @@ function App() {
               <table className="w-full">
                 <thead className="bg-gray-50 border-b border-gray-200">
                   <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                    <th className="px-2 sm:px-4 py-3 text-left text-xs sm:text-sm font-semibold text-gray-700 uppercase tracking-wider">
                       Rank
                     </th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                    <th className="px-2 sm:px-4 py-3 text-left text-xs sm:text-sm font-semibold text-gray-700 uppercase tracking-wider">
                       Manager Name
                     </th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                    <th className="hidden md:table-cell px-2 sm:px-4 py-3 text-left text-xs sm:text-sm font-semibold text-gray-700 uppercase tracking-wider">
                       Team Name
                     </th>
-                    <th className="px-6 py-4 text-right text-sm font-semibold text-gray-700 uppercase tracking-wider">
+                    <th className="px-2 sm:px-4 py-3 text-right text-xs sm:text-sm font-semibold text-gray-700 uppercase tracking-wider">
                       Points
                     </th>
                   </tr>
@@ -279,8 +279,8 @@ function App() {
                         index % 2 === 0 ? 'bg-white' : 'bg-gray-25'
                       }`}
                     >
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className={`inline-flex items-center justify-center w-8 h-8 rounded-full font-bold ${
+                      <td className="px-2 sm:px-4 py-3 whitespace-nowrap">
+                        <span className={`inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full font-bold text-sm ${
                           entry.rank === 1 ? 'bg-yellow-100 text-yellow-800' :
                           entry.rank === 2 ? 'bg-gray-100 text-gray-800' :
                           entry.rank === 3 ? 'bg-orange-100 text-orange-800' :
@@ -289,14 +289,17 @@ function App() {
                           {entry.rank}
                         </span>
                       </td>
-                      <td className="px-6 py-4 text-gray-900 font-medium">
-                        {entry.managerName}
+                      <td className="px-2 sm:px-4 py-3 text-gray-900 font-medium text-sm sm:text-base">
+                        <div className="flex flex-col">
+                          <span>{entry.managerName}</span>
+                          <span className="md:hidden text-xs text-gray-500">{entry.teamName}</span>
+                        </div>
                       </td>
-                      <td className="px-6 py-4 text-gray-600">
+                      <td className="hidden md:table-cell px-2 sm:px-4 py-3 text-gray-600 text-sm sm:text-base">
                         {entry.teamName}
                       </td>
-                      <td className="px-6 py-4 text-right">
-                        <span className="text-lg font-bold text-gray-900">
+                      <td className="px-2 sm:px-4 py-3 text-right">
+                        <span className="text-base sm:text-lg font-bold text-gray-900">
                           {entry.points}
                         </span>
                       </td>
