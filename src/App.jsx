@@ -213,7 +213,7 @@ function App() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             FPL 2-Month League Standings
           </h1>
-          <p className="text-sm sm:text-base text-gray-600">League ID: 286461 • Season 2025/26</p>
+          <p className="text-sm sm:text-base text-gray-600">League ID: 286461 • Season 2024/25</p>
         </div>
 
         {/* Period Selector */}
