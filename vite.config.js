@@ -23,6 +23,12 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '/api'),
         secure: false,
+      },
+      '/api/event': {
+        target: 'https://fantasy.premierleague.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, '/api'),
+        secure: false,
       }
     }
   }

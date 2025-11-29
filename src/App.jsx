@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 const BOOTSTRAP_API = '/api/bootstrap-static'
 const LEAGUE_API = '/api/leagues-classic/286461/standings'
 const MANAGER_HISTORY_API = '/api/entry/{team_id}/history'
+const LIVE_GAMEWEEK_API = '/api/event/{event_id}/live'
+const MANAGER_PICKS_API = '/api/entry/{team_id}/event/{event_id}/picks'
 
 function App() {
   // Define the 5 two-month periods
@@ -35,6 +37,9 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
   const [allData, setAllData] = useState(null) // Store all fetched data to avoid refetching
+  const [isLiveGameweek, setIsLiveGameweek] = useState(false)
+  const [liveGameweekId, setLiveGameweekId] = useState(null)
+  const [refreshingLive, setRefreshingLive] = useState(false)
 
   // Fetch all data on component mount
   useEffect(() => {
@@ -46,7 +51,24 @@ function App() {
     if (allData) {
       calculateStandings(selectedPeriod)
     }
-  }, [selectedPeriod, allData])
+  }, [selectedPeriod, allData, liveGameweekId])
+
+  // Auto-refresh live data every 2 minutes when live gameweek is active
+  useEffect(() => {
+    let intervalId = null
+    
+    if (isLiveGameweek && allData) {
+      // Refresh every 2 minutes (120000ms)
+      intervalId = setInterval(() => {
+        setRefreshingLive(true)
+        calculateStandings(selectedPeriod)
+      }, 2 * 60 * 1000)
+    }
+    
+    return () => {
+      if (intervalId) clearInterval(intervalId)
+    }
+  }, [isLiveGameweek, selectedPeriod, allData])
 
   // Fetch bootstrap data to map gameweeks to dates
   const fetchBootstrapData = async () => {
@@ -88,6 +110,72 @@ function App() {
     }
   }
 
+  // Detect current live gameweek from bootstrap data
+  const getCurrentLiveGameweek = (gameweeks) => {
+    if (!gameweeks || gameweeks.length === 0) return null
+    const liveGW = gameweeks.find(gw => gw.is_current === true && gw.finished === false)
+    return liveGW ? liveGW.id : null
+  }
+
+  // Check if a gameweek belongs to the selected period
+  const isGameweekInPeriod = (gameweekId, periodId, periodMapping) => {
+    const gameweeksInPeriod = periodMapping[periodId] || []
+    return gameweeksInPeriod.includes(gameweekId)
+  }
+
+  // Fetch live gameweek data (all players' live stats)
+  const fetchLiveGameweekData = async (gameweekId) => {
+    try {
+      const url = LIVE_GAMEWEEK_API.replace('{event_id}', gameweekId)
+      const response = await fetch(url)
+      if (!response.ok) throw new Error('Failed to fetch live gameweek data')
+      const data = await response.json()
+      // Returns array of elements with player stats: { id, stats: { total_points, ... } }
+      return data.elements
+    } catch (err) {
+      throw new Error(`Live gameweek API error: ${err.message}`)
+    }
+  }
+
+  // Fetch manager's picks for a specific gameweek
+  const fetchManagerPicks = async (teamId, gameweekId) => {
+    try {
+      const url = MANAGER_PICKS_API
+        .replace('{team_id}', teamId)
+        .replace('{event_id}', gameweekId)
+      const response = await fetch(url)
+      if (!response.ok) throw new Error(`Failed to fetch picks for team ${teamId}`)
+      const data = await response.json()
+      // Returns: { picks: [{ element: playerId, is_captain: bool, is_vice_captain: bool, multiplier: number }] }
+      return data.picks
+    } catch (err) {
+      throw new Error(`Manager picks API error: ${err.message}`)
+    }
+  }
+
+  // Calculate live points for a manager from their picks and live player data
+  const calculateManagerLivePoints = (picks, livePlayerData) => {
+    if (!picks || !livePlayerData) return 0
+    
+    // Create a map of player ID to live points
+    const playerPointsMap = {}
+    livePlayerData.forEach(player => {
+      playerPointsMap[player.id] = player.stats.total_points || 0
+    })
+    
+    // Calculate total points considering captain, bench, etc.
+    let totalPoints = 0
+    picks.forEach(pick => {
+      // multiplier is 0 for bench players, 1 for regular, 2 for captain, 3 for triple captain
+      if (pick.multiplier > 0) {
+        const playerPoints = playerPointsMap[pick.element] || 0
+        totalPoints += playerPoints * pick.multiplier
+      }
+    })
+    
+    return totalPoints
+  }
+
   // Map gameweeks to 2-month periods based on deadline dates
   const mapGameweeksToPeriods = (gameweeks) => {
     const periodMapping = {}
@@ -122,6 +210,15 @@ function App() {
       const gameweeks = await fetchBootstrapData()
       const periodMapping = mapGameweeksToPeriods(gameweeks)
 
+      // Detect live gameweek
+      const currentLiveGWId = getCurrentLiveGameweek(gameweeks)
+      setLiveGameweekId(currentLiveGWId)
+      if (currentLiveGWId) {
+        console.log(`Live gameweek detected: GW${currentLiveGWId}`)
+      } else {
+        console.log('No live gameweek currently active')
+      }
+
       // Fetch league members
       const members = await fetchLeagueMembers()
 
@@ -151,7 +248,8 @@ function App() {
       // Store all data
       setAllData({
         periodMapping,
-        managers: managersWithHistory
+        managers: managersWithHistory,
+        gameweeks: gameweeks
       })
 
     } catch (err) {
@@ -161,25 +259,67 @@ function App() {
   }
 
   // Calculate standings for the selected period
-  const calculateStandings = (periodId) => {
+  const calculateStandings = async (periodId) => {
     if (!allData) return
 
-    const { periodMapping, managers } = allData
+    const { periodMapping, managers, gameweeks } = allData
     const gameweeksInPeriod = periodMapping[periodId] || []
 
-    // Calculate total points for each manager in this period
-    const standings = managers.map(manager => {
-      // Sum points for gameweeks in the selected period
-      const totalPoints = manager.history
-        .filter(gw => gameweeksInPeriod.includes(gw.event))
-        .reduce((sum, gw) => sum + gw.points, 0)
+    // Check if selected period contains the live gameweek
+    const isLiveGWInPeriod = liveGameweekId && isGameweekInPeriod(liveGameweekId, periodId, periodMapping)
+    setIsLiveGameweek(isLiveGWInPeriod)
+    
+    if (liveGameweekId) {
+      console.log(`Live GW${liveGameweekId} is ${isLiveGWInPeriod ? 'in' : 'not in'} selected period: ${periodId}`)
+    }
 
+    let livePlayerData = null
+    if (isLiveGWInPeriod) {
+      try {
+        console.log(`Fetching live data for GW${liveGameweekId}...`)
+        livePlayerData = await fetchLiveGameweekData(liveGameweekId)
+        console.log(`Successfully fetched live data for ${livePlayerData?.length || 0} players`)
+      } catch (err) {
+        console.error('Failed to fetch live gameweek data:', err)
+        // Fall back to historical data only
+        setIsLiveGameweek(false)
+      }
+    }
+
+    // Calculate points for each manager
+    const standingsPromises = managers.map(async (manager) => {
+      // Sum historical points (all completed GWs in period, excluding live GW)
+      const historicalPoints = manager.history
+        .filter(gw => {
+          // Include completed GWs in the period, but exclude the live GW
+          return gameweeksInPeriod.includes(gw.event) && 
+                 (!liveGameweekId || gw.event !== liveGameweekId)
+        })
+        .reduce((sum, gw) => sum + gw.points, 0)
+      
+      // Add live points if applicable
+      let livePoints = 0
+      let hasLiveData = false
+      if (isLiveGWInPeriod && livePlayerData) {
+        try {
+          const picks = await fetchManagerPicks(manager.teamId, liveGameweekId)
+          livePoints = calculateManagerLivePoints(picks, livePlayerData)
+          hasLiveData = true // Successfully fetched live data
+        } catch (err) {
+          console.error(`Failed to get live points for ${manager.managerName}:`, err)
+          // Use historical points only if live fetch fails
+        }
+      }
+      
       return {
         managerName: manager.managerName,
         teamName: manager.teamName,
-        points: totalPoints
+        points: historicalPoints + livePoints,
+        hasLiveData: hasLiveData
       }
     })
+    
+    const standings = await Promise.all(standingsPromises)
 
     // Sort by points descending
     standings.sort((a, b) => b.points - a.points)
@@ -192,11 +332,20 @@ function App() {
 
     setStandings(rankedStandings)
     setLoading(false)
+    setRefreshingLive(false)
   }
 
   // Handle period change
   const handlePeriodChange = (e) => {
     setSelectedPeriod(e.target.value)
+  }
+
+  // Handle manual refresh of live data
+  const handleManualRefresh = () => {
+    if (isLiveGameweek && allData) {
+      setRefreshingLive(true)
+      calculateStandings(selectedPeriod)
+    }
   }
 
   // Get current period name
@@ -218,22 +367,50 @@ function App() {
 
         {/* Period Selector */}
         <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-4 sm:mb-6">
-          <label htmlFor="period-select" className="block text-base sm:text-lg font-semibold text-gray-700 mb-3">
-            Select 2-Month Period:
-          </label>
-          <select
-            id="period-select"
-            value={selectedPeriod}
-            onChange={handlePeriodChange}
-            disabled={loading && !allData}
-            className="w-full px-3 sm:px-4 py-2 sm:py-3 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
-          >
-            {periods.map(period => (
-              <option key={period.id} value={period.id}>
-                {period.name}
-              </option>
-            ))}
-          </select>
+          <div className="flex items-center justify-between mb-3">
+            <label htmlFor="period-select" className="block text-base sm:text-lg font-semibold text-gray-700">
+              Select 2-Month Period:
+            </label>
+            {isLiveGameweek && (
+              <span className="inline-flex items-center px-2 sm:px-3 py-1 text-xs sm:text-sm font-semibold text-red-600 bg-red-50 rounded-full">
+                🔴 LIVE
+              </span>
+            )}
+          </div>
+          <div className="flex gap-2 sm:gap-3">
+            <select
+              id="period-select"
+              value={selectedPeriod}
+              onChange={handlePeriodChange}
+              disabled={loading && !allData}
+              className="flex-1 px-3 sm:px-4 py-2 sm:py-3 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+            >
+              {periods.map(period => (
+                <option key={period.id} value={period.id}>
+                  {period.name}
+                </option>
+              ))}
+            </select>
+            {isLiveGameweek && (
+              <button
+                onClick={handleManualRefresh}
+                disabled={refreshingLive}
+                className="px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
+              >
+                {refreshingLive ? (
+                  <>
+                    <div className="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    <span className="hidden sm:inline">Refreshing...</span>
+                  </>
+                ) : (
+                  <>
+                    <span>🔄</span>
+                    <span className="hidden sm:inline">Refresh</span>
+                  </>
+                )}
+              </button>
+            )}
+          </div>
         </div>
 
         {/* Loading State */}
@@ -264,7 +441,7 @@ function App() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-4 sm:px-6 py-3 sm:py-4">
               <h2 className="text-xl sm:text-2xl font-bold text-white">
-                {getCurrentPeriodName()} Standings
+                {getCurrentPeriodName()} Standings{isLiveGameweek && ' 🔴 LIVE'}
               </h2>
             </div>
             <div className="overflow-x-auto">
@@ -314,7 +491,7 @@ function App() {
                       </td>
                       <td className="px-2 sm:px-4 py-3 text-right">
                         <span className="text-base sm:text-lg font-bold text-gray-900">
-                          {entry.points}
+                          {entry.points}{entry.hasLiveData && ' 🔴'}
                         </span>
                       </td>
                     </tr>
