@@ -7,6 +7,21 @@ const MANAGER_HISTORY_API = '/api/entry/{team_id}/history'
 const LIVE_GAMEWEEK_API = '/api/event/{event_id}/live'
 const MANAGER_PICKS_API = '/api/entry/{team_id}/event/{event_id}/picks'
 
+/** Run async work on items with at most `limit` concurrent in-flight tasks. */
+const mapWithConcurrency = async (items, limit, fn) => {
+  const results = new Array(items.length)
+  let nextIndex = 0
+  const workers = Array(Math.min(limit, items.length)).fill(0).map(async () => {
+    while (true) {
+      const i = nextIndex++
+      if (i >= items.length) return
+      results[i] = await fn(items[i], i)
+    }
+  })
+  await Promise.all(workers)
+  return results
+}
+
 function App() {
   // Define the 5 two-month periods
   const periods = [
@@ -222,28 +237,28 @@ function App() {
       // Fetch league members
       const members = await fetchLeagueMembers()
 
-      // Fetch history for all managers (this may take a while)
-      const managersWithHistory = await Promise.all(
-        members.map(async (member) => {
-          try {
-            const history = await fetchManagerHistory(member.entry)
-            return {
-              teamId: member.entry,
-              managerName: member.player_name,
-              teamName: member.entry_name,
-              history: history
-            }
-          } catch (err) {
-            console.error(`Failed to fetch history for ${member.player_name}:`, err)
-            return {
-              teamId: member.entry,
-              managerName: member.player_name,
-              teamName: member.entry_name,
-              history: []
-            }
+      // Fetch history for all managers (throttled to avoid FPL / serverless overload)
+      const managersWithHistory = await mapWithConcurrency(members, 5, async (member) => {
+        try {
+          const history = await fetchManagerHistory(member.entry)
+          return {
+            teamId: member.entry,
+            managerName: member.player_name,
+            teamName: member.entry_name,
+            history,
+            fetchFailed: false
           }
-        })
-      )
+        } catch (err) {
+          console.error(`Failed to fetch history for ${member.player_name}:`, err)
+          return {
+            teamId: member.entry,
+            managerName: member.player_name,
+            teamName: member.entry_name,
+            history: [],
+            fetchFailed: true
+          }
+        }
+      })
 
       // Store all data
       setAllData({
@@ -288,8 +303,9 @@ function App() {
 
     // Calculate points for each manager
     const standingsPromises = managers.map(async (manager) => {
+      const historyRows = Array.isArray(manager.history) ? manager.history : []
       // Sum historical points (all completed GWs in period, excluding live GW)
-      const historicalPoints = manager.history
+      const historicalPoints = historyRows
         .filter(gw => {
           // Include completed GWs in the period, but exclude the live GW
           return gameweeksInPeriod.includes(gw.event) && 
@@ -315,14 +331,18 @@ function App() {
         managerName: manager.managerName,
         teamName: manager.teamName,
         points: historicalPoints + livePoints,
-        hasLiveData: hasLiveData
+        hasLiveData,
+        fetchFailed: manager.fetchFailed === true
       }
     })
     
     const standings = await Promise.all(standingsPromises)
 
-    // Sort by points descending
-    standings.sort((a, b) => b.points - a.points)
+    // Sort: failed fetches last, then by points descending
+    standings.sort((a, b) => {
+      if (a.fetchFailed !== b.fetchFailed) return a.fetchFailed ? 1 : -1
+      return b.points - a.points
+    })
 
     // Add rank
     const rankedStandings = standings.map((entry, index) => ({
@@ -490,9 +510,15 @@ function App() {
                         {entry.teamName}
                       </td>
                       <td className="px-2 sm:px-4 py-3 text-right">
-                        <span className="text-base sm:text-lg font-bold text-gray-900">
-                          {entry.points}{entry.hasLiveData && ' 🔴'}
-                        </span>
+                        {entry.fetchFailed ? (
+                          <span className="inline-block px-2 py-1 text-xs font-semibold text-yellow-800 bg-yellow-100 rounded">
+                            data unavailable
+                          </span>
+                        ) : (
+                          <span className="text-base sm:text-lg font-bold text-gray-900">
+                            {entry.points}{entry.hasLiveData && ' 🔴'}
+                          </span>
+                        )}
                       </td>
                     </tr>
                   ))}
