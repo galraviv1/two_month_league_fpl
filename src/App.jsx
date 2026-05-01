@@ -152,6 +152,22 @@ function App() {
     }
   }
 
+  // Try to load the prebuilt picks cache that the GitHub Actions cron writes to
+  // public/data/live-picks.json. Returns null on any error or wrong gameweek so
+  // callers can silently fall through to the live FPL fetch.
+  const loadCachedPicks = async (gameweekId) => {
+    if (!gameweekId) return null
+    try {
+      const response = await fetch('/data/live-picks.json', { cache: 'no-store' })
+      if (!response.ok) return null
+      const data = await response.json()
+      if (!data || data.gameweek !== gameweekId || !data.managers) return null
+      return data.managers
+    } catch {
+      return null
+    }
+  }
+
   // Fetch manager's picks for a specific gameweek
   const fetchManagerPicks = async (teamId, gameweekId) => {
     try {
@@ -289,6 +305,7 @@ function App() {
     }
 
     let livePlayerData = null
+    let cachedPicksByTeam = null
     if (isLiveGWInPeriod) {
       try {
         console.log(`Fetching live data for GW${liveGameweekId}...`)
@@ -298,6 +315,14 @@ function App() {
         console.error('Failed to fetch live gameweek data:', err)
         // Fall back to historical data only
         setIsLiveGameweek(false)
+      }
+
+      // Prefer the prebuilt picks cache (written by the GitHub Actions cron from
+      // a non-Vercel egress) over hitting FPL's /picks/ endpoint, which the WAF
+      // blocks for Vercel-origin requests.
+      cachedPicksByTeam = await loadCachedPicks(liveGameweekId)
+      if (cachedPicksByTeam) {
+        console.log(`Using cached picks for ${Object.keys(cachedPicksByTeam).length} managers`)
       }
     }
 
@@ -318,14 +343,20 @@ function App() {
       let hasLiveData = false
       let livePartial = false
       if (isLiveGWInPeriod && livePlayerData) {
-        try {
-          const picks = await fetchManagerPicks(manager.teamId, liveGameweekId)
-          livePoints = calculateManagerLivePoints(picks, livePlayerData)
-          hasLiveData = true // Successfully fetched live data
-        } catch (err) {
-          console.error(`Failed to get live points for ${manager.managerName}:`, err)
-          // Live picks failed for this manager — historical points only, flag as partial
-          livePartial = true
+        const cached = cachedPicksByTeam ? cachedPicksByTeam[String(manager.teamId)] : null
+        if (cached?.picks) {
+          livePoints = calculateManagerLivePoints(cached.picks, livePlayerData)
+          hasLiveData = true
+        } else {
+          try {
+            const picks = await fetchManagerPicks(manager.teamId, liveGameweekId)
+            livePoints = calculateManagerLivePoints(picks, livePlayerData)
+            hasLiveData = true // Successfully fetched live data
+          } catch (err) {
+            console.error(`Failed to get live points for ${manager.managerName}:`, err)
+            // Live picks failed for this manager — historical points only, flag as partial
+            livePartial = true
+          }
         }
       }
       

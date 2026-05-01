@@ -1,0 +1,1926 @@
+{
+  "gameweek": 35,
+  "fetchedAt": "2026-05-01T20:14:50.017Z",
+  "managers": {
+    "7965": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 256,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 343,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 341,
+          "multiplier": 0
+        },
+        {
+          "element": 84,
+          "multiplier": 0
+        },
+        {
+          "element": 257,
+          "multiplier": 0
+        },
+        {
+          "element": 77,
+          "multiplier": 0
+        }
+      ]
+    },
+    "18458": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 706,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 16,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 783,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 139,
+          "multiplier": 0
+        },
+        {
+          "element": 257,
+          "multiplier": 0
+        },
+        {
+          "element": 723,
+          "multiplier": 0
+        },
+        {
+          "element": 267,
+          "multiplier": 0
+        }
+      ]
+    },
+    "24552": {
+      "picks": [
+        {
+          "element": 470,
+          "multiplier": 1
+        },
+        {
+          "element": 77,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 256,
+          "multiplier": 1
+        },
+        {
+          "element": 235,
+          "multiplier": 1
+        },
+        {
+          "element": 90,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 1,
+          "multiplier": 0
+        },
+        {
+          "element": 684,
+          "multiplier": 0
+        },
+        {
+          "element": 390,
+          "multiplier": 0
+        },
+        {
+          "element": 683,
+          "multiplier": 0
+        }
+      ]
+    },
+    "34740": {
+      "picks": [
+        {
+          "element": 341,
+          "multiplier": 1
+        },
+        {
+          "element": 694,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 683,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 64,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 101,
+          "multiplier": 0
+        },
+        {
+          "element": 329,
+          "multiplier": 0
+        },
+        {
+          "element": 374,
+          "multiplier": 0
+        },
+        {
+          "element": 242,
+          "multiplier": 0
+        }
+      ]
+    },
+    "55438": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 706,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 16,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 178,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 253,
+          "multiplier": 0
+        },
+        {
+          "element": 267,
+          "multiplier": 0
+        },
+        {
+          "element": 256,
+          "multiplier": 0
+        },
+        {
+          "element": 151,
+          "multiplier": 0
+        }
+      ]
+    },
+    "77949": {
+      "picks": [
+        {
+          "element": 101,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 77,
+          "multiplier": 1
+        },
+        {
+          "element": 343,
+          "multiplier": 1
+        },
+        {
+          "element": 329,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 235,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 1
+        },
+        {
+          "element": 517,
+          "multiplier": 1
+        },
+        {
+          "element": 38,
+          "multiplier": 1
+        },
+        {
+          "element": 447,
+          "multiplier": 1
+        }
+      ]
+    },
+    "676664": {
+      "picks": [
+        {
+          "element": 32,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 260,
+          "multiplier": 1
+        },
+        {
+          "element": 72,
+          "multiplier": 1
+        },
+        {
+          "element": 547,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 64,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 50,
+          "multiplier": 0
+        },
+        {
+          "element": 373,
+          "multiplier": 0
+        },
+        {
+          "element": 440,
+          "multiplier": 0
+        }
+      ]
+    },
+    "705272": {
+      "picks": [
+        {
+          "element": 220,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 6,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 382,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 458,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 661,
+          "multiplier": 1
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 329,
+          "multiplier": 0
+        },
+        {
+          "element": 694,
+          "multiplier": 0
+        },
+        {
+          "element": 541,
+          "multiplier": 0
+        }
+      ]
+    },
+    "849628": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 343,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 2
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 624,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 267,
+          "multiplier": 0
+        },
+        {
+          "element": 683,
+          "multiplier": 0
+        },
+        {
+          "element": 257,
+          "multiplier": 0
+        }
+      ]
+    },
+    "1152380": {
+      "picks": [
+        {
+          "element": 341,
+          "multiplier": 1
+        },
+        {
+          "element": 77,
+          "multiplier": 1
+        },
+        {
+          "element": 343,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 84,
+          "multiplier": 1
+        },
+        {
+          "element": 235,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 139,
+          "multiplier": 0
+        },
+        {
+          "element": 157,
+          "multiplier": 0
+        },
+        {
+          "element": 224,
+          "multiplier": 0
+        },
+        {
+          "element": 151,
+          "multiplier": 0
+        }
+      ]
+    },
+    "1249254": {
+      "picks": [
+        {
+          "element": 314,
+          "multiplier": 1
+        },
+        {
+          "element": 373,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 6,
+          "multiplier": 1
+        },
+        {
+          "element": 235,
+          "multiplier": 2
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 329,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 624,
+          "multiplier": 1
+        },
+        {
+          "element": 101,
+          "multiplier": 0
+        },
+        {
+          "element": 249,
+          "multiplier": 0
+        },
+        {
+          "element": 77,
+          "multiplier": 0
+        },
+        {
+          "element": 322,
+          "multiplier": 0
+        }
+      ]
+    },
+    "1453906": {
+      "picks": [
+        {
+          "element": 341,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 260,
+          "multiplier": 1
+        },
+        {
+          "element": 706,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 84,
+          "multiplier": 1
+        },
+        {
+          "element": 624,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 541,
+          "multiplier": 1
+        },
+        {
+          "element": 77,
+          "multiplier": 1
+        }
+      ]
+    },
+    "1492159": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 603,
+          "multiplier": 1
+        },
+        {
+          "element": 36,
+          "multiplier": 1
+        },
+        {
+          "element": 260,
+          "multiplier": 1
+        },
+        {
+          "element": 242,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 660,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 1
+        },
+        {
+          "element": 691,
+          "multiplier": 2
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 329,
+          "multiplier": 0
+        },
+        {
+          "element": 373,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        }
+      ]
+    },
+    "1620467": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 725,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 706,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 515,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 624,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 341,
+          "multiplier": 1
+        },
+        {
+          "element": 151,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 603,
+          "multiplier": 1
+        }
+      ]
+    },
+    "1627579": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 256,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 267,
+          "multiplier": 1
+        },
+        {
+          "element": 783,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 628,
+          "multiplier": 0
+        },
+        {
+          "element": 694,
+          "multiplier": 0
+        },
+        {
+          "element": 749,
+          "multiplier": 0
+        },
+        {
+          "element": 709,
+          "multiplier": 0
+        }
+      ]
+    },
+    "1633600": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 261,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 373,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 515,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 384,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 64,
+          "multiplier": 2
+        },
+        {
+          "element": 567,
+          "multiplier": 0
+        },
+        {
+          "element": 749,
+          "multiplier": 0
+        },
+        {
+          "element": 260,
+          "multiplier": 0
+        },
+        {
+          "element": 145,
+          "multiplier": 0
+        }
+      ]
+    },
+    "1762542": {
+      "picks": [
+        {
+          "element": 253,
+          "multiplier": 1
+        },
+        {
+          "element": 568,
+          "multiplier": 1
+        },
+        {
+          "element": 256,
+          "multiplier": 1
+        },
+        {
+          "element": 694,
+          "multiplier": 1
+        },
+        {
+          "element": 36,
+          "multiplier": 1
+        },
+        {
+          "element": 450,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 329,
+          "multiplier": 1
+        },
+        {
+          "element": 596,
+          "multiplier": 2
+        },
+        {
+          "element": 337,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 260,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        },
+        {
+          "element": 430,
+          "multiplier": 0
+        }
+      ]
+    },
+    "2195631": {
+      "picks": [
+        {
+          "element": 101,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 72,
+          "multiplier": 1
+        },
+        {
+          "element": 224,
+          "multiplier": 1
+        },
+        {
+          "element": 541,
+          "multiplier": 1
+        },
+        {
+          "element": 694,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 3
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 600,
+          "multiplier": 0
+        },
+        {
+          "element": 267,
+          "multiplier": 0
+        },
+        {
+          "element": 90,
+          "multiplier": 0
+        },
+        {
+          "element": 100,
+          "multiplier": 0
+        }
+      ]
+    },
+    "2403900": {
+      "picks": [
+        {
+          "element": 341,
+          "multiplier": 1
+        },
+        {
+          "element": 343,
+          "multiplier": 1
+        },
+        {
+          "element": 77,
+          "multiplier": 1
+        },
+        {
+          "element": 72,
+          "multiplier": 1
+        },
+        {
+          "element": 151,
+          "multiplier": 1
+        },
+        {
+          "element": 235,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 2
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 178,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 82,
+          "multiplier": 0
+        },
+        {
+          "element": 344,
+          "multiplier": 0
+        },
+        {
+          "element": 169,
+          "multiplier": 0
+        }
+      ]
+    },
+    "3931577": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 706,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 2
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 267,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 1
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 329,
+          "multiplier": 0
+        },
+        {
+          "element": 257,
+          "multiplier": 0
+        },
+        {
+          "element": 723,
+          "multiplier": 0
+        }
+      ]
+    },
+    "4043637": {
+      "picks": [
+        {
+          "element": 101,
+          "multiplier": 1
+        },
+        {
+          "element": 38,
+          "multiplier": 1
+        },
+        {
+          "element": 473,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 730,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 178,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 1
+        },
+        {
+          "element": 515,
+          "multiplier": 1
+        },
+        {
+          "element": 373,
+          "multiplier": 1
+        },
+        {
+          "element": 575,
+          "multiplier": 1
+        }
+      ]
+    },
+    "4851053": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 291,
+          "multiplier": 1
+        },
+        {
+          "element": 257,
+          "multiplier": 1
+        },
+        {
+          "element": 74,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 661,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 252,
+          "multiplier": 0
+        },
+        {
+          "element": 378,
+          "multiplier": 0
+        },
+        {
+          "element": 668,
+          "multiplier": 0
+        }
+      ]
+    },
+    "4956381": {
+      "picks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 77,
+          "multiplier": 1
+        },
+        {
+          "element": 72,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 64,
+          "multiplier": 1
+        },
+        {
+          "element": 624,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 2
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 683,
+          "multiplier": 0
+        },
+        {
+          "element": 387,
+          "multiplier": 0
+        },
+        {
+          "element": 373,
+          "multiplier": 0
+        }
+      ]
+    },
+    "4989514": {
+      "picks": [
+        {
+          "element": 101,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 110,
+          "multiplier": 1
+        },
+        {
+          "element": 473,
+          "multiplier": 1
+        },
+        {
+          "element": 235,
+          "multiplier": 2
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 698,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 64,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 36,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 329,
+          "multiplier": 0
+        }
+      ]
+    },
+    "5290879": {
+      "picks": [
+        {
+          "element": 470,
+          "multiplier": 1
+        },
+        {
+          "element": 373,
+          "multiplier": 1
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 36,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 2
+        },
+        {
+          "element": 266,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 64,
+          "multiplier": 1
+        },
+        {
+          "element": 287,
+          "multiplier": 0
+        },
+        {
+          "element": 291,
+          "multiplier": 0
+        },
+        {
+          "element": 575,
+          "multiplier": 0
+        },
+        {
+          "element": 337,
+          "multiplier": 0
+        }
+      ]
+    },
+    "5530787": {
+      "picks": [
+        {
+          "element": 470,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 374,
+          "multiplier": 1
+        },
+        {
+          "element": 226,
+          "multiplier": 1
+        },
+        {
+          "element": 515,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 624,
+          "multiplier": 1
+        },
+        {
+          "element": 565,
+          "multiplier": 0
+        },
+        {
+          "element": 151,
+          "multiplier": 0
+        },
+        {
+          "element": 59,
+          "multiplier": 0
+        },
+        {
+          "element": 348,
+          "multiplier": 0
+        }
+      ]
+    },
+    "5663703": {
+      "picks": [
+        {
+          "element": 470,
+          "multiplier": 1
+        },
+        {
+          "element": 113,
+          "multiplier": 1
+        },
+        {
+          "element": 151,
+          "multiplier": 1
+        },
+        {
+          "element": 38,
+          "multiplier": 1
+        },
+        {
+          "element": 477,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 450,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 121,
+          "multiplier": 1
+        },
+        {
+          "element": 64,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 600,
+          "multiplier": 0
+        },
+        {
+          "element": 666,
+          "multiplier": 0
+        },
+        {
+          "element": 440,
+          "multiplier": 0
+        },
+        {
+          "element": 390,
+          "multiplier": 0
+        }
+      ]
+    },
+    "7274290": {
+      "picks": [
+        {
+          "element": 139,
+          "multiplier": 1
+        },
+        {
+          "element": 343,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 5,
+          "multiplier": 1
+        },
+        {
+          "element": 235,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 84,
+          "multiplier": 1
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 77,
+          "multiplier": 0
+        },
+        {
+          "element": 783,
+          "multiplier": 0
+        },
+        {
+          "element": 151,
+          "multiplier": 0
+        }
+      ]
+    },
+    "7308800": {
+      "picks": [
+        {
+          "element": 67,
+          "multiplier": 1
+        },
+        {
+          "element": 228,
+          "multiplier": 1
+        },
+        {
+          "element": 575,
+          "multiplier": 1
+        },
+        {
+          "element": 38,
+          "multiplier": 1
+        },
+        {
+          "element": 697,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 47,
+          "multiplier": 1
+        },
+        {
+          "element": 661,
+          "multiplier": 1
+        },
+        {
+          "element": 681,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 2
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 82,
+          "multiplier": 0
+        },
+        {
+          "element": 258,
+          "multiplier": 0
+        },
+        {
+          "element": 72,
+          "multiplier": 0
+        }
+      ]
+    },
+    "8711426": {
+      "picks": [
+        {
+          "element": 600,
+          "multiplier": 1
+        },
+        {
+          "element": 694,
+          "multiplier": 1
+        },
+        {
+          "element": 6,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 21,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 390,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 1
+        },
+        {
+          "element": 136,
+          "multiplier": 1
+        },
+        {
+          "element": 661,
+          "multiplier": 2
+        },
+        {
+          "element": 502,
+          "multiplier": 0
+        },
+        {
+          "element": 260,
+          "multiplier": 0
+        },
+        {
+          "element": 411,
+          "multiplier": 0
+        },
+        {
+          "element": 84,
+          "multiplier": 0
+        }
+      ]
+    }
+  }
+}
