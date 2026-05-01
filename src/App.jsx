@@ -301,8 +301,8 @@ function App() {
       }
     }
 
-    // Calculate points for each manager
-    const standingsPromises = managers.map(async (manager) => {
+    // Calculate points for each manager (throttled to avoid live picks burst failures)
+    const standings = await mapWithConcurrency(managers, 5, async (manager) => {
       const historyRows = Array.isArray(manager.history) ? manager.history : []
       // Sum historical points (all completed GWs in period, excluding live GW)
       const historicalPoints = historyRows
@@ -316,6 +316,7 @@ function App() {
       // Add live points if applicable
       let livePoints = 0
       let hasLiveData = false
+      let livePartial = false
       if (isLiveGWInPeriod && livePlayerData) {
         try {
           const picks = await fetchManagerPicks(manager.teamId, liveGameweekId)
@@ -323,7 +324,8 @@ function App() {
           hasLiveData = true // Successfully fetched live data
         } catch (err) {
           console.error(`Failed to get live points for ${manager.managerName}:`, err)
-          // Use historical points only if live fetch fails
+          // Live picks failed for this manager — historical points only, flag as partial
+          livePartial = true
         }
       }
       
@@ -332,15 +334,15 @@ function App() {
         teamName: manager.teamName,
         points: historicalPoints + livePoints,
         hasLiveData,
-        fetchFailed: manager.fetchFailed === true
+        fetchFailed: manager.fetchFailed === true,
+        livePartial
       }
     })
-    
-    const standings = await Promise.all(standingsPromises)
 
-    // Sort: failed fetches last, then by points descending
+    // Sort: failed history last, then partial-live, then by points descending
     standings.sort((a, b) => {
       if (a.fetchFailed !== b.fetchFailed) return a.fetchFailed ? 1 : -1
+      if (a.livePartial !== b.livePartial) return a.livePartial ? 1 : -1
       return b.points - a.points
     })
 
@@ -515,9 +517,16 @@ function App() {
                             data unavailable
                           </span>
                         ) : (
-                          <span className="text-base sm:text-lg font-bold text-gray-900">
-                            {entry.points}{entry.hasLiveData && ' 🔴'}
-                          </span>
+                          <div className="flex flex-col items-end gap-1">
+                            <span className="text-base sm:text-lg font-bold text-gray-900">
+                              {entry.points}{entry.hasLiveData && ' 🔴'}
+                            </span>
+                            {entry.livePartial && (
+                              <span className="inline-block px-2 py-0.5 text-[10px] sm:text-xs font-semibold text-orange-800 bg-orange-100 rounded whitespace-nowrap">
+                                live GW missing
+                              </span>
+                            )}
+                          </div>
                         )}
                       </td>
                     </tr>
