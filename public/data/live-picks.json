@@ -1,6 +1,6 @@
 {
-  "gameweek": 35,
-  "fetchedAt": "2026-05-05T05:41:23.421Z",
+  "gameweek": 36,
+  "fetchedAt": "2026-05-09T10:55:21.794Z",
   "managers": {
     "7965": {
       "picks": [
@@ -17,11 +17,11 @@
           "multiplier": 1
         },
         {
-          "element": 343,
+          "element": 148,
           "multiplier": 1
         },
         {
-          "element": 21,
+          "element": 783,
           "multiplier": 1
         },
         {
@@ -41,7 +41,7 @@
           "multiplier": 1
         },
         {
-          "element": 136,
+          "element": 666,
           "multiplier": 1
         },
         {
@@ -50,19 +50,19 @@
         },
         {
           "element": 341,
-          "multiplier": 0
+          "multiplier": 1
         },
         {
           "element": 84,
-          "multiplier": 0
+          "multiplier": 1
         },
         {
           "element": 257,
-          "multiplier": 0
+          "multiplier": 1
         },
         {
           "element": 77,
-          "multiplier": 0
+          "multiplier": 1
         }
       ]
     },
@@ -81,7 +81,11 @@
           "multiplier": 1
         },
         {
-          "element": 706,
+          "element": 257,
+          "multiplier": 1
+        },
+        {
+          "element": 723,
           "multiplier": 1
         },
         {
@@ -101,7 +105,7 @@
           "multiplier": 1
         },
         {
-          "element": 136,
+          "element": 267,
           "multiplier": 1
         },
         {
@@ -109,35 +113,31 @@
           "multiplier": 2
         },
         {
+          "element": 139,
+          "multiplier": 1
+        },
+        {
+          "element": 148,
+          "multiplier": 1
+        },
+        {
           "element": 691,
           "multiplier": 1
         },
         {
-          "element": 139,
-          "multiplier": 0
-        },
-        {
-          "element": 257,
-          "multiplier": 0
-        },
-        {
-          "element": 723,
-          "multiplier": 0
-        },
-        {
-          "element": 267,
-          "multiplier": 0
+          "element": 136,
+          "multiplier": 1
         }
       ]
     },
     "24552": {
       "picks": [
         {
-          "element": 470,
+          "element": 1,
           "multiplier": 1
         },
         {
-          "element": 77,
+          "element": 568,
           "multiplier": 1
         },
         {
@@ -149,11 +149,11 @@
           "multiplier": 1
         },
         {
-          "element": 235,
+          "element": 16,
           "multiplier": 1
         },
         {
-          "element": 90,
+          "element": 417,
           "multiplier": 1
         },
         {
@@ -169,23 +169,23 @@
           "multiplier": 2
         },
         {
-          "element": 136,
+          "element": 597,
           "multiplier": 1
         },
         {
-          "element": 249,
+          "element": 100,
           "multiplier": 1
         },
         {
-          "element": 1,
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 267,
           "multiplier": 0
         },
         {
           "element": 684,
-          "multiplier": 0
-        },
-        {
-          "element": 390,
           "multiplier": 0
         },
         {
@@ -201,15 +201,11 @@
           "multiplier": 1
         },
         {
-          "element": 694,
+          "element": 6,
           "multiplier": 1
         },
         {
           "element": 5,
-          "multiplier": 1
-        },
-        {
-          "element": 683,
           "multiplier": 1
         },
         {
@@ -229,6 +225,10 @@
           "multiplier": 1
         },
         {
+          "element": 329,
+          "multiplier": 1
+        },
+        {
           "element": 136,
           "multiplier": 1
         },
@@ -238,18 +238,18 @@
         },
         {
           "element": 430,
-          "multiplier": 2
+          "multiplier": 3
         },
         {
           "element": 101,
           "multiplier": 0
         },
         {
-          "element": 329,
+          "element": 683,
           "multiplier": 0
         },
         {
-          "element": 374,
+          "element": 694,
           "multiplier": 0
         },
         {
@@ -261,11 +261,11 @@
     "55438": {
       "picks": [
         {
-          "element": 1,
+          "element": 253,
           "multiplier": 1
         },
         {
-          "element": 706,
+          "element": 256,
           "multiplier": 1
         },
         {
@@ -274,7 +274,7 @@
         },
         {
           "element": 411,
-          "multiplier": 1
+          "multiplier": 2
         },
         {
           "element": 16,
@@ -293,7 +293,7 @@
           "multiplier": 1
         },
         {
-          "element": 691,
+          "element": 267,
           "multiplier": 1
         },
         {
@@ -302,30 +302,30 @@
         },
         {
           "element": 430,
-          "multiplier": 2
+          "multiplier": 1
         },
         {
-          "element": 253,
-          "multiplier": 0
-        },
-        {
-          "element": 267,
-          "multiplier": 0
-        },
-        {
-          "element": 256,
-          "multiplier": 0
+          "element": 1,
+          "multiplier": 1
         },
         {
           "element": 151,
-          "multiplier": 0
+          "multiplier": 1
+        },
+        {
+          "element": 691,
+          "multiplier": 1
+        },
+        {
+          "element": 706,
+          "multiplier": 1
         }
       ]
     },
     "77949": {
       "picks": [
         {
-          "element": 101,
+          "element": 736,
           "multiplier": 1
         },
         {
@@ -337,7 +337,7 @@
           "multiplier": 1
         },
         {
-          "element": 343,
+          "element": 38,
           "multiplier": 1
         },
         {
@@ -349,7 +349,7 @@
           "multiplier": 1
         },
         {
-          "element": 235,
+          "element": 267,
           "multiplier": 1
         },
         {
@@ -358,7 +358,7 @@
         },
         {
           "element": 430,
-          "multiplier": 2
+          "multiplier": 3
         },
         {
           "element": 691,
@@ -370,19 +370,19 @@
         },
         {
           "element": 470,
-          "multiplier": 1
+          "multiplier": 0
         },
         {
           "element": 517,
-          "multiplier": 1
+          "multiplier": 0
         },
         {
-          "element": 38,
-          "multiplier": 1
+          "element": 343,
+          "multiplier": 0
         },
         {
           "element": 447,
-          "multiplier": 1
+          "multiplier": 0
         }
       ]
     },
@@ -405,7 +405,11 @@
           "multiplier": 1
         },
         {
-          "element": 547,
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 267,
           "multiplier": 1
         },
         {
@@ -413,11 +417,11 @@
           "multiplier": 1
         },
         {
-          "element": 387,
+          "element": 449,
           "multiplier": 1
         },
         {
-          "element": 449,
+          "element": 50,
           "multiplier": 1
         },
         {
@@ -426,26 +430,22 @@
         },
         {
           "element": 430,
-          "multiplier": 2
-        },
-        {
-          "element": 691,
-          "multiplier": 1
+          "multiplier": 3
         },
         {
           "element": 470,
           "multiplier": 0
         },
         {
-          "element": 50,
-          "multiplier": 0
-        },
-        {
-          "element": 373,
-          "multiplier": 0
-        },
-        {
           "element": 440,
+          "multiplier": 0
+        },
+        {
+          "element": 691,
+          "multiplier": 0
+        },
+        {
+          "element": 547,
           "multiplier": 0
         }
       ]
@@ -453,15 +453,7 @@
     "705272": {
       "picks": [
         {
-          "element": 220,
-          "multiplier": 1
-        },
-        {
-          "element": 6,
-          "multiplier": 1
-        },
-        {
-          "element": 694,
+          "element": 139,
           "multiplier": 1
         },
         {
@@ -469,27 +461,27 @@
           "multiplier": 1
         },
         {
-          "element": 382,
+          "element": 6,
           "multiplier": 1
         },
         {
-          "element": 458,
+          "element": 411,
           "multiplier": 1
         },
         {
-          "element": 237,
+          "element": 449,
           "multiplier": 1
         },
         {
-          "element": 47,
+          "element": 417,
           "multiplier": 1
         },
         {
-          "element": 329,
+          "element": 783,
           "multiplier": 1
         },
         {
-          "element": 691,
+          "element": 387,
           "multiplier": 1
         },
         {
@@ -497,15 +489,23 @@
           "multiplier": 2
         },
         {
+          "element": 666,
+          "multiplier": 1
+        },
+        {
+          "element": 500,
+          "multiplier": 1
+        },
+        {
           "element": 470,
           "multiplier": 0
         },
         {
-          "element": 661,
+          "element": 458,
           "multiplier": 0
         },
         {
-          "element": 8,
+          "element": 151,
           "multiplier": 0
         },
         {
@@ -525,16 +525,16 @@
           "multiplier": 1
         },
         {
-          "element": 343,
-          "multiplier": 1
-        },
-        {
           "element": 411,
           "multiplier": 1
         },
         {
+          "element": 257,
+          "multiplier": 1
+        },
+        {
           "element": 449,
-          "multiplier": 2
+          "multiplier": 1
         },
         {
           "element": 417,
@@ -549,15 +549,15 @@
           "multiplier": 1
         },
         {
-          "element": 624,
-          "multiplier": 1
-        },
-        {
-          "element": 136,
+          "element": 267,
           "multiplier": 1
         },
         {
           "element": 430,
+          "multiplier": 2
+        },
+        {
+          "element": 500,
           "multiplier": 1
         },
         {
@@ -565,7 +565,7 @@
           "multiplier": 0
         },
         {
-          "element": 267,
+          "element": 343,
           "multiplier": 0
         },
         {
@@ -573,7 +573,7 @@
           "multiplier": 0
         },
         {
-          "element": 257,
+          "element": 136,
           "multiplier": 0
         }
       ]
@@ -581,15 +581,15 @@
     "1152380": {
       "picks": [
         {
-          "element": 341,
+          "element": 139,
           "multiplier": 1
         },
         {
-          "element": 77,
+          "element": 5,
           "multiplier": 1
         },
         {
-          "element": 343,
+          "element": 151,
           "multiplier": 1
         },
         {
@@ -601,7 +601,7 @@
           "multiplier": 1
         },
         {
-          "element": 235,
+          "element": 16,
           "multiplier": 1
         },
         {
@@ -613,31 +613,31 @@
           "multiplier": 1
         },
         {
-          "element": 249,
+          "element": 157,
           "multiplier": 1
         },
         {
           "element": 430,
-          "multiplier": 2
+          "multiplier": 3
         },
         {
           "element": 691,
           "multiplier": 1
         },
         {
-          "element": 139,
+          "element": 341,
           "multiplier": 0
         },
         {
-          "element": 157,
+          "element": 249,
           "multiplier": 0
         },
         {
-          "element": 224,
+          "element": 77,
           "multiplier": 0
         },
         {
-          "element": 151,
+          "element": 343,
           "multiplier": 0
         }
       ]
@@ -649,8 +649,8 @@
           "multiplier": 1
         },
         {
-          "element": 373,
-          "multiplier": 1
+          "element": 411,
+          "multiplier": 3
         },
         {
           "element": 5,
@@ -661,8 +661,8 @@
           "multiplier": 1
         },
         {
-          "element": 235,
-          "multiplier": 2
+          "element": 418,
+          "multiplier": 1
         },
         {
           "element": 449,
@@ -677,15 +677,15 @@
           "multiplier": 1
         },
         {
-          "element": 329,
+          "element": 430,
           "multiplier": 1
         },
         {
-          "element": 136,
+          "element": 100,
           "multiplier": 1
         },
         {
-          "element": 624,
+          "element": 249,
           "multiplier": 1
         },
         {
@@ -693,7 +693,7 @@
           "multiplier": 0
         },
         {
-          "element": 249,
+          "element": 329,
           "multiplier": 0
         },
         {
@@ -709,7 +709,7 @@
     "1453906": {
       "picks": [
         {
-          "element": 341,
+          "element": 1,
           "multiplier": 1
         },
         {
@@ -721,7 +721,7 @@
           "multiplier": 1
         },
         {
-          "element": 706,
+          "element": 77,
           "multiplier": 1
         },
         {
@@ -733,6 +733,10 @@
           "multiplier": 1
         },
         {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
           "element": 47,
           "multiplier": 1
         },
@@ -741,32 +745,28 @@
           "multiplier": 1
         },
         {
-          "element": 624,
-          "multiplier": 1
-        },
-        {
-          "element": 430,
-          "multiplier": 2
-        },
-        {
           "element": 136,
           "multiplier": 1
         },
         {
-          "element": 1,
-          "multiplier": 1
+          "element": 430,
+          "multiplier": 3
         },
         {
-          "element": 417,
-          "multiplier": 1
+          "element": 341,
+          "multiplier": 0
+        },
+        {
+          "element": 624,
+          "multiplier": 0
         },
         {
           "element": 541,
-          "multiplier": 1
+          "multiplier": 0
         },
         {
-          "element": 77,
-          "multiplier": 1
+          "element": 706,
+          "multiplier": 0
         }
       ]
     },
@@ -777,7 +777,7 @@
           "multiplier": 1
         },
         {
-          "element": 603,
+          "element": 5,
           "multiplier": 1
         },
         {
@@ -785,16 +785,20 @@
           "multiplier": 1
         },
         {
+          "element": 151,
+          "multiplier": 1
+        },
+        {
           "element": 260,
           "multiplier": 1
         },
         {
-          "element": 242,
+          "element": 21,
           "multiplier": 1
         },
         {
           "element": 82,
-          "multiplier": 1
+          "multiplier": 2
         },
         {
           "element": 449,
@@ -805,7 +809,7 @@
           "multiplier": 1
         },
         {
-          "element": 249,
+          "element": 178,
           "multiplier": 1
         },
         {
@@ -813,23 +817,19 @@
           "multiplier": 1
         },
         {
+          "element": 434,
+          "multiplier": 0
+        },
+        {
           "element": 691,
-          "multiplier": 2
-        },
-        {
-          "element": 470,
           "multiplier": 0
         },
         {
-          "element": 329,
+          "element": 242,
           "multiplier": 0
         },
         {
-          "element": 373,
-          "multiplier": 0
-        },
-        {
-          "element": 8,
+          "element": 440,
           "multiplier": 0
         }
       ]
@@ -841,7 +841,7 @@
           "multiplier": 1
         },
         {
-          "element": 411,
+          "element": 5,
           "multiplier": 1
         },
         {
@@ -849,7 +849,11 @@
           "multiplier": 1
         },
         {
-          "element": 706,
+          "element": 568,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
           "multiplier": 1
         },
         {
@@ -857,11 +861,7 @@
           "multiplier": 1
         },
         {
-          "element": 515,
-          "multiplier": 1
-        },
-        {
-          "element": 47,
+          "element": 16,
           "multiplier": 1
         },
         {
@@ -869,32 +869,32 @@
           "multiplier": 1
         },
         {
+          "element": 100,
+          "multiplier": 1
+        },
+        {
           "element": 430,
           "multiplier": 2
         },
         {
-          "element": 624,
-          "multiplier": 1
-        },
-        {
-          "element": 691,
+          "element": 178,
           "multiplier": 1
         },
         {
           "element": 341,
-          "multiplier": 1
+          "multiplier": 0
         },
         {
-          "element": 725,
-          "multiplier": 1
+          "element": 276,
+          "multiplier": 0
         },
         {
-          "element": 21,
-          "multiplier": 1
+          "element": 706,
+          "multiplier": 0
         },
         {
           "element": 603,
-          "multiplier": 1
+          "multiplier": 0
         }
       ]
     },
@@ -969,7 +969,7 @@
           "multiplier": 1
         },
         {
-          "element": 261,
+          "element": 260,
           "multiplier": 1
         },
         {
@@ -982,14 +982,14 @@
         },
         {
           "element": 449,
-          "multiplier": 1
+          "multiplier": 2
         },
         {
           "element": 47,
           "multiplier": 1
         },
         {
-          "element": 515,
+          "element": 119,
           "multiplier": 1
         },
         {
@@ -997,7 +997,7 @@
           "multiplier": 1
         },
         {
-          "element": 384,
+          "element": 21,
           "multiplier": 1
         },
         {
@@ -1006,7 +1006,7 @@
         },
         {
           "element": 64,
-          "multiplier": 2
+          "multiplier": 1
         },
         {
           "element": 567,
@@ -1017,7 +1017,7 @@
           "multiplier": 0
         },
         {
-          "element": 260,
+          "element": 261,
           "multiplier": 0
         },
         {
@@ -1033,23 +1033,19 @@
           "multiplier": 1
         },
         {
-          "element": 256,
+          "element": 568,
           "multiplier": 1
         },
         {
-          "element": 36,
-          "multiplier": 2
+          "element": 256,
+          "multiplier": 1
         },
         {
           "element": 694,
           "multiplier": 1
         },
         {
-          "element": 568,
-          "multiplier": 1
-        },
-        {
-          "element": 260,
+          "element": 36,
           "multiplier": 1
         },
         {
@@ -1069,6 +1065,10 @@
           "multiplier": 1
         },
         {
+          "element": 596,
+          "multiplier": 2
+        },
+        {
           "element": 337,
           "multiplier": 1
         },
@@ -1077,7 +1077,7 @@
           "multiplier": 0
         },
         {
-          "element": 596,
+          "element": 260,
           "multiplier": 0
         },
         {
@@ -1105,15 +1105,11 @@
           "multiplier": 1
         },
         {
-          "element": 224,
+          "element": 258,
           "multiplier": 1
         },
         {
-          "element": 541,
-          "multiplier": 1
-        },
-        {
-          "element": 694,
+          "element": 256,
           "multiplier": 1
         },
         {
@@ -1129,8 +1125,12 @@
           "multiplier": 1
         },
         {
+          "element": 267,
+          "multiplier": 1
+        },
+        {
           "element": 430,
-          "multiplier": 3
+          "multiplier": 2
         },
         {
           "element": 249,
@@ -1141,7 +1141,7 @@
           "multiplier": 0
         },
         {
-          "element": 267,
+          "element": 694,
           "multiplier": 0
         },
         {
@@ -1161,15 +1161,11 @@
           "multiplier": 1
         },
         {
-          "element": 343,
-          "multiplier": 1
-        },
-        {
           "element": 77,
           "multiplier": 1
         },
         {
-          "element": 72,
+          "element": 5,
           "multiplier": 1
         },
         {
@@ -1177,12 +1173,16 @@
           "multiplier": 1
         },
         {
-          "element": 235,
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 16,
           "multiplier": 1
         },
         {
           "element": 449,
-          "multiplier": 2
+          "multiplier": 1
         },
         {
           "element": 417,
@@ -1198,14 +1198,14 @@
         },
         {
           "element": 430,
-          "multiplier": 1
+          "multiplier": 3
         },
         {
           "element": 470,
           "multiplier": 0
         },
         {
-          "element": 82,
+          "element": 72,
           "multiplier": 0
         },
         {
@@ -1238,7 +1238,7 @@
         },
         {
           "element": 449,
-          "multiplier": 2
+          "multiplier": 1
         },
         {
           "element": 47,
@@ -1254,7 +1254,7 @@
         },
         {
           "element": 430,
-          "multiplier": 1
+          "multiplier": 2
         },
         {
           "element": 691,
@@ -1266,42 +1266,38 @@
         },
         {
           "element": 470,
-          "multiplier": 0
+          "multiplier": 1
         },
         {
           "element": 329,
-          "multiplier": 0
+          "multiplier": 1
         },
         {
           "element": 257,
-          "multiplier": 0
+          "multiplier": 1
         },
         {
           "element": 723,
-          "multiplier": 0
+          "multiplier": 1
         }
       ]
     },
     "4043637": {
       "picks": [
         {
-          "element": 101,
+          "element": 253,
           "multiplier": 1
         },
         {
-          "element": 373,
+          "element": 38,
           "multiplier": 1
         },
         {
-          "element": 473,
+          "element": 575,
           "multiplier": 1
         },
         {
           "element": 5,
-          "multiplier": 1
-        },
-        {
-          "element": 387,
           "multiplier": 1
         },
         {
@@ -1313,36 +1309,40 @@
           "multiplier": 1
         },
         {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
           "element": 82,
           "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 430,
+          "multiplier": 3
         },
         {
           "element": 178,
           "multiplier": 1
         },
         {
-          "element": 430,
-          "multiplier": 2
+          "element": 101,
+          "multiplier": 0
         },
         {
           "element": 730,
-          "multiplier": 1
+          "multiplier": 0
         },
         {
-          "element": 470,
-          "multiplier": 1
+          "element": 373,
+          "multiplier": 0
         },
         {
-          "element": 515,
-          "multiplier": 1
-        },
-        {
-          "element": 38,
-          "multiplier": 1
-        },
-        {
-          "element": 575,
-          "multiplier": 1
+          "element": 473,
+          "multiplier": 0
         }
       ]
     },
@@ -1353,7 +1353,7 @@
           "multiplier": 1
         },
         {
-          "element": 74,
+          "element": 8,
           "multiplier": 1
         },
         {
@@ -1365,7 +1365,11 @@
           "multiplier": 1
         },
         {
-          "element": 668,
+          "element": 74,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
           "multiplier": 1
         },
         {
@@ -1374,10 +1378,6 @@
         },
         {
           "element": 449,
-          "multiplier": 1
-        },
-        {
-          "element": 237,
           "multiplier": 1
         },
         {
@@ -1405,7 +1405,7 @@
           "multiplier": 0
         },
         {
-          "element": 8,
+          "element": 668,
           "multiplier": 0
         }
       ]
@@ -1429,7 +1429,7 @@
           "multiplier": 1
         },
         {
-          "element": 82,
+          "element": 660,
           "multiplier": 1
         },
         {
@@ -1449,12 +1449,12 @@
           "multiplier": 1
         },
         {
-          "element": 624,
+          "element": 178,
           "multiplier": 1
         },
         {
-          "element": 136,
-          "multiplier": 2
+          "element": 430,
+          "multiplier": 3
         },
         {
           "element": 470,
@@ -1493,8 +1493,8 @@
           "multiplier": 1
         },
         {
-          "element": 235,
-          "multiplier": 2
+          "element": 417,
+          "multiplier": 1
         },
         {
           "element": 449,
@@ -1509,8 +1509,8 @@
           "multiplier": 1
         },
         {
-          "element": 64,
-          "multiplier": 1
+          "element": 430,
+          "multiplier": 3
         },
         {
           "element": 136,
@@ -1541,19 +1541,23 @@
     "5290879": {
       "picks": [
         {
-          "element": 470,
+          "element": 287,
           "multiplier": 1
         },
         {
-          "element": 373,
+          "element": 575,
           "multiplier": 1
         },
         {
-          "element": 106,
+          "element": 291,
           "multiplier": 1
         },
         {
           "element": 36,
+          "multiplier": 1
+        },
+        {
+          "element": 373,
           "multiplier": 1
         },
         {
@@ -1569,15 +1573,7 @@
           "multiplier": 1
         },
         {
-          "element": 47,
-          "multiplier": 1
-        },
-        {
           "element": 387,
-          "multiplier": 1
-        },
-        {
-          "element": 136,
           "multiplier": 1
         },
         {
@@ -1585,19 +1581,23 @@
           "multiplier": 1
         },
         {
-          "element": 287,
-          "multiplier": 0
-        },
-        {
-          "element": 291,
-          "multiplier": 0
-        },
-        {
-          "element": 575,
-          "multiplier": 0
-        },
-        {
           "element": 337,
+          "multiplier": 1
+        },
+        {
+          "element": 470,
+          "multiplier": 0
+        },
+        {
+          "element": 106,
+          "multiplier": 0
+        },
+        {
+          "element": 249,
+          "multiplier": 0
+        },
+        {
+          "element": 47,
           "multiplier": 0
         }
       ]
@@ -1605,11 +1605,11 @@
     "5530787": {
       "picks": [
         {
-          "element": 470,
+          "element": 1,
           "multiplier": 1
         },
         {
-          "element": 411,
+          "element": 151,
           "multiplier": 1
         },
         {
@@ -1617,11 +1617,11 @@
           "multiplier": 1
         },
         {
-          "element": 226,
+          "element": 411,
           "multiplier": 1
         },
         {
-          "element": 515,
+          "element": 160,
           "multiplier": 1
         },
         {
@@ -1629,16 +1629,16 @@
           "multiplier": 1
         },
         {
-          "element": 82,
-          "multiplier": 1
-        },
-        {
           "element": 21,
           "multiplier": 1
         },
         {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
           "element": 430,
-          "multiplier": 2
+          "multiplier": 3
         },
         {
           "element": 136,
@@ -1649,11 +1649,11 @@
           "multiplier": 1
         },
         {
-          "element": 565,
+          "element": 470,
           "multiplier": 0
         },
         {
-          "element": 151,
+          "element": 226,
           "multiplier": 0
         },
         {
@@ -1673,23 +1673,19 @@
           "multiplier": 1
         },
         {
-          "element": 151,
-          "multiplier": 1
-        },
-        {
           "element": 113,
           "multiplier": 1
         },
         {
-          "element": 440,
+          "element": 151,
           "multiplier": 1
         },
         {
-          "element": 450,
+          "element": 38,
           "multiplier": 1
         },
         {
-          "element": 121,
+          "element": 477,
           "multiplier": 1
         },
         {
@@ -1697,11 +1693,15 @@
           "multiplier": 1
         },
         {
+          "element": 450,
+          "multiplier": 1
+        },
+        {
           "element": 47,
           "multiplier": 1
         },
         {
-          "element": 666,
+          "element": 121,
           "multiplier": 1
         },
         {
@@ -1717,11 +1717,11 @@
           "multiplier": 0
         },
         {
-          "element": 477,
+          "element": 666,
           "multiplier": 0
         },
         {
-          "element": 38,
+          "element": 440,
           "multiplier": 0
         },
         {
@@ -1737,7 +1737,7 @@
           "multiplier": 1
         },
         {
-          "element": 343,
+          "element": 151,
           "multiplier": 1
         },
         {
@@ -1749,7 +1749,11 @@
           "multiplier": 1
         },
         {
-          "element": 235,
+          "element": 257,
+          "multiplier": 1
+        },
+        {
+          "element": 783,
           "multiplier": 1
         },
         {
@@ -1761,11 +1765,7 @@
           "multiplier": 1
         },
         {
-          "element": 84,
-          "multiplier": 1
-        },
-        {
-          "element": 691,
+          "element": 16,
           "multiplier": 1
         },
         {
@@ -1773,7 +1773,7 @@
           "multiplier": 2
         },
         {
-          "element": 249,
+          "element": 691,
           "multiplier": 1
         },
         {
@@ -1781,15 +1781,15 @@
           "multiplier": 0
         },
         {
+          "element": 249,
+          "multiplier": 0
+        },
+        {
           "element": 77,
           "multiplier": 0
         },
         {
-          "element": 783,
-          "multiplier": 0
-        },
-        {
-          "element": 151,
+          "element": 84,
           "multiplier": 0
         }
       ]
@@ -1801,15 +1801,15 @@
           "multiplier": 1
         },
         {
+          "element": 228,
+          "multiplier": 1
+        },
+        {
           "element": 575,
           "multiplier": 1
         },
         {
-          "element": 258,
-          "multiplier": 1
-        },
-        {
-          "element": 228,
+          "element": 38,
           "multiplier": 1
         },
         {
@@ -1829,7 +1829,7 @@
           "multiplier": 1
         },
         {
-          "element": 82,
+          "element": 661,
           "multiplier": 1
         },
         {
@@ -1845,11 +1845,11 @@
           "multiplier": 0
         },
         {
-          "element": 661,
+          "element": 82,
           "multiplier": 0
         },
         {
-          "element": 38,
+          "element": 258,
           "multiplier": 0
         },
         {
@@ -1861,15 +1861,7 @@
     "8711426": {
       "picks": [
         {
-          "element": 502,
-          "multiplier": 1
-        },
-        {
-          "element": 260,
-          "multiplier": 1
-        },
-        {
-          "element": 6,
+          "element": 600,
           "multiplier": 1
         },
         {
@@ -1877,7 +1869,11 @@
           "multiplier": 1
         },
         {
-          "element": 411,
+          "element": 6,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
           "multiplier": 1
         },
         {
@@ -1889,15 +1885,11 @@
           "multiplier": 1
         },
         {
-          "element": 390,
-          "multiplier": 2
-        },
-        {
           "element": 82,
           "multiplier": 1
         },
         {
-          "element": 136,
+          "element": 390,
           "multiplier": 1
         },
         {
@@ -1905,15 +1897,23 @@
           "multiplier": 1
         },
         {
-          "element": 600,
-          "multiplier": 0
-        },
-        {
-          "element": 8,
-          "multiplier": 0
+          "element": 136,
+          "multiplier": 1
         },
         {
           "element": 661,
+          "multiplier": 2
+        },
+        {
+          "element": 502,
+          "multiplier": 0
+        },
+        {
+          "element": 260,
+          "multiplier": 0
+        },
+        {
+          "element": 411,
           "multiplier": 0
         },
         {
