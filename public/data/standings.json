@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-21T14:28:38.472Z",
+  "dataUpdatedAt": "2026-08-21T14:49:59.260Z",
   "liveGameweek": null,
   "nextGameweek": 1,
   "nextDeadline": "2026-08-21T17:30:00Z",
@@ -222,15 +222,6 @@
       "liveHitCost": 0
     },
     {
-      "entry": 1812675,
-      "managerName": "ניר אזר",
-      "teamName": "Azar Team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
       "entry": 114852,
       "managerName": "Lotan Levi",
       "teamName": "Game of Stones",
@@ -240,9 +231,9 @@
       "liveHitCost": 0
     },
     {
-      "entry": 595041,
-      "managerName": "Aviv Liefer",
-      "teamName": "heta paleeds",
+      "entry": 1812675,
+      "managerName": "ניר אזר",
+      "teamName": "Azar Team",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
@@ -258,15 +249,6 @@
       "liveHitCost": 0
     },
     {
-      "entry": 251414,
-      "managerName": "Guy Kol",
-      "teamName": "urdoun till i die",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
       "entry": 916480,
       "managerName": "Ido Rivlin",
       "teamName": "the rivlins",
@@ -276,36 +258,18 @@
       "liveHitCost": 0
     },
     {
-      "entry": 1406310,
-      "managerName": "Amit Mor",
-      "teamName": "FC MOR",
+      "entry": 595041,
+      "managerName": "Aviv Liefer",
+      "teamName": "heta paleeds",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
       "liveHitCost": 0
     },
     {
-      "entry": 879741,
-      "managerName": "Rani Bar Dayan",
-      "teamName": "Silva",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 206815,
-      "managerName": "koren kalai",
-      "teamName": "saka shel kaka",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 628989,
-      "managerName": "Tom Felsenfeld",
-      "teamName": "Fantasy Fanatics",
+      "entry": 251414,
+      "managerName": "Guy Kol",
+      "teamName": "urdoun till i die",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
@@ -321,9 +285,27 @@
       "liveHitCost": 0
     },
     {
+      "entry": 879741,
+      "managerName": "Rani Bar Dayan",
+      "teamName": "Silva",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
       "entry": 1288541,
       "managerName": "Guy Chen",
       "teamName": "A Cunha mateta",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 206815,
+      "managerName": "koren kalai",
+      "teamName": "saka shel kaka",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
@@ -339,9 +321,18 @@
       "liveHitCost": 0
     },
     {
-      "entry": 959578,
-      "managerName": "Ilay Konfeld",
-      "teamName": "Konfeld",
+      "entry": 1406310,
+      "managerName": "Amit Mor",
+      "teamName": "FC MOR",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 628989,
+      "managerName": "Tom Felsenfeld",
+      "teamName": "Fantasy Fanatics",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
@@ -351,6 +342,15 @@
       "entry": 1904952,
       "managerName": "Liam rakin",
       "teamName": "Back to Back",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 959578,
+      "managerName": "Ilay Konfeld",
+      "teamName": "Konfeld",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
