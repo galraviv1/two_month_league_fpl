@@ -1,100 +1,92 @@
 # FPL 2-Month League Standings
 
-A React web application that displays Fantasy Premier League standings for a specific league broken down by 2-month periods throughout the 2024/25 season.
+A React web app that displays Fantasy Premier League standings for a specific
+league, broken down into five 2-month periods across the 2026/27 season.
 
 ## Features
 
-- 📊 View league standings for 5 different 2-month periods
-- 🏆 Real-time data fetched from official FPL API
-- 📱 Responsive design with modern UI
-- ⚡ Fast performance with React and Vite
-- 🎨 Beautiful styling with Tailwind CSS
+- View league standings for 5 different 2-month periods
+- Near-real-time scores during a live gameweek
+- Transfer hits (-4/-8) deducted from period totals
+- Responsive design with a modern UI
+- Fast: the browser makes a single fetch for the heavy data
 
 ## 2-Month Periods
 
-The app divides the FPL season into 5 periods:
+| Period              | Gameweeks |
+| ------------------- | --------- |
+| August + September  | GW1-5     |
+| October + November  | GW6-12    |
+| December + January  | GW13-23   |
+| February + March    | GW24-30   |
+| April + May         | GW31-38   |
 
-1. **August + September** - Early season form
-2. **October + November** - Autumn period
-3. **December + January** - Winter fixtures
-4. **February + March** - Spring run-in
-5. **April + May** - Season finale
+Gameweek ranges are derived automatically from the FPL `phases` data each
+build, so they self-correct if the fixture calendar shifts.
 
-## Installation
+## Architecture
 
-1. **Clone the repository** (or you're already here!)
+The heavy lifting (all managers, all gameweeks, plus the frozen live picks) is
+precomputed by a scheduled GitHub Actions job and committed as a single static
+file, `public/data/standings.json`. The deployed app fetches that one file.
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+```
+GitHub Actions cron (every 15 min)
+  └─ scripts/build-standings.mjs  ──►  FPL API (bootstrap, standings, history, picks)
+        └─ writes public/data/standings.json (committed on change)
 
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+Browser
+  ├─ fetch /data/standings.json          (all history + frozen live picks)
+  └─ fetch /api/event/{gw}/live          (only during a live GW: player points)
+```
 
-4. **Open your browser** and navigate to the URL shown in the terminal (usually `http://localhost:5173`)
+This design exists because FPL's WAF returns 403 for the `/entry/{id}/event/{gw}/picks/`
+endpoint when it is called from Vercel's data-center egress IPs. The cron runs
+from a GitHub runner that FPL serves normally, so it fetches the picks once
+(they are frozen at the deadline) and bakes them into the static file. During a
+live gameweek the browser only needs the single `/event/{gw}/live` call, which
+FPL does serve to Vercel. See [INVESTIGATION.md](INVESTIGATION.md) for the full
+back-story.
 
-## Usage
+## Configuration
 
-1. The app automatically loads data for your league (ID: 286461) on startup
-2. Use the dropdown menu to select a 2-month period
-3. View the standings table showing:
-   - Rank within the selected period
-   - Manager name
-   - Team name
-   - Total points for that period
+All season-specific values live in [config.mjs](config.mjs):
 
-## How It Works
+```js
+export const LEAGUE_ID = 367147
+export const SEASON_LABEL = '2026/27'
+```
 
-The app fetches data from three FPL API endpoints:
+To roll the app over to a new season, update those two values (the league ID is
+re-issued by FPL every season) and let the cron rebuild.
 
-1. **Bootstrap API** - Gets gameweek information and deadline dates
-2. **League API** - Gets all managers in the league
-3. **Manager History API** - Gets individual gameweek points for each manager
+## Development
 
-It then:
-- Maps each gameweek to a specific month based on its deadline date
-- Groups gameweeks into 2-month periods
-- Calculates total points for each manager in the selected period
-- Ranks managers by their period points
+```bash
+npm install
+npm run dev        # Vite dev server; proxies /api/event straight to FPL
+```
+
+To regenerate the standings file locally:
+
+```bash
+node scripts/build-standings.mjs
+```
 
 ## Building for Production
 
-To create a production build:
-
 ```bash
 npm run build
-```
-
-To preview the production build:
-
-```bash
 npm run preview
 ```
 
 ## Technology Stack
 
-- **React** - UI library
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Styling
-- **FPL API** - Data source
-
-## League Configuration
-
-To use this app for a different league:
-
-1. Open `src/App.jsx`
-2. Find the line: `const LEAGUE_API = 'https://fantasy.premierleague.com/api/leagues-classic/286461/standings/'`
-3. Replace `286461` with your league ID
-
-## Notes
-
-- The app fetches data for all managers on initial load, which may take a few seconds
-- Data is cached to avoid refetching when switching between periods
-- All calculations are done client-side
-- No backend or database required
+- **React** + **Vite** - UI and build tooling
+- **Tailwind CSS** - styling
+- **GitHub Actions** - scheduled data builder
+- **Vercel** - static hosting + one live serverless function
+- **FPL API** - data source
 
 ## License
 

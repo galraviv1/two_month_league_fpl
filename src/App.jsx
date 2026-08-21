@@ -1,411 +1,191 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useMemo } from 'react'
 
-// API endpoints - using serverless functions for production, proxy for development
-const BOOTSTRAP_API = '/api/bootstrap-static'
-const LEAGUE_API = '/api/leagues-classic/286461/standings'
-const MANAGER_HISTORY_API = '/api/entry/{team_id}/history'
+// The heavy data (all managers, all gameweeks, frozen live picks) is precomputed
+// by scripts/build-standings.mjs and served as a single static file. The browser
+// never fans out to FPL. The only live call is one /event/{gw}/live request that
+// returns every player's current points, which we combine with the frozen picks.
+const STANDINGS_URL = '/data/standings.json'
 const LIVE_GAMEWEEK_API = '/api/event/{event_id}/live'
-const MANAGER_PICKS_API = '/api/entry/{team_id}/event/{event_id}/picks'
+const LIVE_REFRESH_MS = 2 * 60 * 1000
 
-/** Run async work on items with at most `limit` concurrent in-flight tasks. */
-const mapWithConcurrency = async (items, limit, fn) => {
-  const results = new Array(items.length)
-  let nextIndex = 0
-  const workers = Array(Math.min(limit, items.length)).fill(0).map(async () => {
-    while (true) {
-      const i = nextIndex++
-      if (i >= items.length) return
-      results[i] = await fn(items[i], i)
-    }
-  })
-  await Promise.all(workers)
-  return results
+const fetchLivePlayerPoints = async (gameweekId) => {
+  const url = LIVE_GAMEWEEK_API.replace('{event_id}', gameweekId)
+  const res = await fetch(url, { cache: 'no-store' })
+  if (!res.ok) throw new Error('Failed to fetch live gameweek data')
+  const data = await res.json()
+  const map = {}
+  for (const el of data.elements || []) {
+    map[el.id] = el.stats?.total_points || 0
+  }
+  return map
+}
+
+const formatUpdatedAgo = (iso) => {
+  if (!iso) return null
+  const mins = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000))
+  if (mins < 1) return 'just now'
+  if (mins < 60) return `${mins}m ago`
+  const hrs = Math.floor(mins / 60)
+  return `${hrs}h ${mins % 60}m ago`
 }
 
 function App() {
-  // Define the 5 two-month periods
-  const periods = [
-    { id: 'aug-sep', name: 'August + September', months: [8, 9] },
-    { id: 'oct-nov', name: 'October + November', months: [10, 11] },
-    { id: 'dec-jan', name: 'December + January', months: [12, 1] },
-    { id: 'feb-mar', name: 'February + March', months: [2, 3] },
-    { id: 'apr-may', name: 'April + May', months: [4, 5] }
-  ]
-
-  // Helper function to determine current period based on today's date
-  const getCurrentPeriodId = () => {
-    const currentMonth = new Date().getMonth() + 1 // 1-12
-    
-    if (currentMonth === 8 || currentMonth === 9) return 'aug-sep'
-    if (currentMonth === 10 || currentMonth === 11) return 'oct-nov'
-    if (currentMonth === 12 || currentMonth === 1) return 'dec-jan'
-    if (currentMonth === 2 || currentMonth === 3) return 'feb-mar'
-    if (currentMonth === 4 || currentMonth === 5) return 'apr-may'
-    
-    // Default fallback to August + September (start of season)
-    return 'aug-sep'
-  }
-
-  // State management
-  const [selectedPeriod, setSelectedPeriod] = useState(getCurrentPeriodId())
-  const [standings, setStandings] = useState([])
+  const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-  const [allData, setAllData] = useState(null) // Store all fetched data to avoid refetching
-  const [isLiveGameweek, setIsLiveGameweek] = useState(false)
-  const [liveGameweekId, setLiveGameweekId] = useState(null)
+  const [selectedPeriod, setSelectedPeriod] = useState(null)
+  const [livePoints, setLivePoints] = useState(null) // { [element]: points }
   const [refreshingLive, setRefreshingLive] = useState(false)
 
-  // Fetch all data on component mount
-  useEffect(() => {
-    fetchAllData()
+  const loadStandings = useCallback(async () => {
+    const res = await fetch(STANDINGS_URL, { cache: 'no-store' })
+    if (!res.ok) throw new Error('Failed to load standings data')
+    return res.json()
   }, [])
 
-  // Recalculate standings when period changes
   useEffect(() => {
-    if (allData) {
-      calculateStandings(selectedPeriod)
-    }
-  }, [selectedPeriod, allData, liveGameweekId])
-
-  // Auto-refresh live data every 2 minutes when live gameweek is active
-  useEffect(() => {
-    let intervalId = null
-    
-    if (isLiveGameweek && allData) {
-      // Refresh every 2 minutes (120000ms)
-      intervalId = setInterval(() => {
-        setRefreshingLive(true)
-        calculateStandings(selectedPeriod)
-      }, 2 * 60 * 1000)
-    }
-    
-    return () => {
-      if (intervalId) clearInterval(intervalId)
-    }
-  }, [isLiveGameweek, selectedPeriod, allData])
-
-  // Fetch bootstrap data to map gameweeks to dates
-  const fetchBootstrapData = async () => {
-    try {
-      const response = await fetch(BOOTSTRAP_API)
-      if (!response.ok) throw new Error('Failed to fetch bootstrap data')
-      const data = await response.json()
-      // events array contains all gameweeks with deadline_time
-      return data.events
-    } catch (err) {
-      throw new Error(`Bootstrap API error: ${err.message}`)
-    }
-  }
-
-  // Fetch league members
-  const fetchLeagueMembers = async () => {
-    try {
-      const response = await fetch(LEAGUE_API)
-      if (!response.ok) throw new Error('Failed to fetch league data')
-      const data = await response.json()
-      // results array contains all managers
-      return data.standings.results
-    } catch (err) {
-      throw new Error(`League API error: ${err.message}`)
-    }
-  }
-
-  // Fetch individual manager's gameweek history
-  const fetchManagerHistory = async (teamId) => {
-    try {
-      const url = MANAGER_HISTORY_API.replace('{team_id}', teamId)
-      const response = await fetch(url)
-      if (!response.ok) throw new Error(`Failed to fetch history for team ${teamId}`)
-      const data = await response.json()
-      // current array contains gameweek-by-gameweek points
-      return data.current
-    } catch (err) {
-      throw new Error(`Manager history API error: ${err.message}`)
-    }
-  }
-
-  // Detect current live gameweek from bootstrap data
-  const getCurrentLiveGameweek = (gameweeks) => {
-    if (!gameweeks || gameweeks.length === 0) return null
-    const liveGW = gameweeks.find(gw => gw.is_current === true && gw.finished === false)
-    return liveGW ? liveGW.id : null
-  }
-
-  // Check if a gameweek belongs to the selected period
-  const isGameweekInPeriod = (gameweekId, periodId, periodMapping) => {
-    const gameweeksInPeriod = periodMapping[periodId] || []
-    return gameweeksInPeriod.includes(gameweekId)
-  }
-
-  // Fetch live gameweek data (all players' live stats)
-  const fetchLiveGameweekData = async (gameweekId) => {
-    try {
-      const url = LIVE_GAMEWEEK_API.replace('{event_id}', gameweekId)
-      const response = await fetch(url)
-      if (!response.ok) throw new Error('Failed to fetch live gameweek data')
-      const data = await response.json()
-      // Returns array of elements with player stats: { id, stats: { total_points, ... } }
-      return data.elements
-    } catch (err) {
-      throw new Error(`Live gameweek API error: ${err.message}`)
-    }
-  }
-
-  // Try to load the prebuilt picks cache that the GitHub Actions cron writes to
-  // public/data/live-picks.json. Returns null on any error or wrong gameweek so
-  // callers can silently fall through to the live FPL fetch.
-  const loadCachedPicks = async (gameweekId) => {
-    if (!gameweekId) return null
-    try {
-      const response = await fetch('/data/live-picks.json', { cache: 'no-store' })
-      if (!response.ok) return null
-      const data = await response.json()
-      if (!data || data.gameweek !== gameweekId || !data.managers) return null
-      return data.managers
-    } catch {
-      return null
-    }
-  }
-
-  // Fetch manager's picks for a specific gameweek
-  const fetchManagerPicks = async (teamId, gameweekId) => {
-    try {
-      const url = MANAGER_PICKS_API
-        .replace('{team_id}', teamId)
-        .replace('{event_id}', gameweekId)
-      const response = await fetch(url)
-      if (!response.ok) throw new Error(`Failed to fetch picks for team ${teamId}`)
-      const data = await response.json()
-      // Returns: { picks: [{ element: playerId, is_captain: bool, is_vice_captain: bool, multiplier: number }] }
-      return data.picks
-    } catch (err) {
-      throw new Error(`Manager picks API error: ${err.message}`)
-    }
-  }
-
-  // Calculate live points for a manager from their picks and live player data
-  const calculateManagerLivePoints = (picks, livePlayerData) => {
-    if (!picks || !livePlayerData) return 0
-    
-    // Create a map of player ID to live points
-    const playerPointsMap = {}
-    livePlayerData.forEach(player => {
-      playerPointsMap[player.id] = player.stats.total_points || 0
-    })
-    
-    // Calculate total points considering captain, bench, etc.
-    let totalPoints = 0
-    picks.forEach(pick => {
-      // multiplier is 0 for bench players, 1 for regular, 2 for captain, 3 for triple captain
-      if (pick.multiplier > 0) {
-        const playerPoints = playerPointsMap[pick.element] || 0
-        totalPoints += playerPoints * pick.multiplier
-      }
-    })
-    
-    return totalPoints
-  }
-
-  // Map gameweeks to 2-month periods based on deadline dates
-  const mapGameweeksToPeriods = (gameweeks) => {
-    const periodMapping = {}
-    
-    periods.forEach(period => {
-      periodMapping[period.id] = []
-    })
-
-    gameweeks.forEach(gameweek => {
-      // Parse deadline_time to get the month
-      const deadline = new Date(gameweek.deadline_time)
-      const month = deadline.getMonth() + 1 // getMonth() returns 0-11, we need 1-12
-
-      // Find which period this gameweek belongs to
-      periods.forEach(period => {
-        if (period.months.includes(month)) {
-          periodMapping[period.id].push(gameweek.id)
-        }
-      })
-    })
-
-    return periodMapping
-  }
-
-  // Fetch all data once
-  const fetchAllData = async () => {
-    setLoading(true)
-    setError(null)
-
-    try {
-      // Fetch bootstrap data to get gameweek-to-date mappings
-      const gameweeks = await fetchBootstrapData()
-      const periodMapping = mapGameweeksToPeriods(gameweeks)
-
-      // Detect live gameweek
-      const currentLiveGWId = getCurrentLiveGameweek(gameweeks)
-      setLiveGameweekId(currentLiveGWId)
-      if (currentLiveGWId) {
-        console.log(`Live gameweek detected: GW${currentLiveGWId}`)
-      } else {
-        console.log('No live gameweek currently active')
-      }
-
-      // Fetch league members
-      const members = await fetchLeagueMembers()
-
-      // Fetch history for all managers (throttled to avoid FPL / serverless overload)
-      const managersWithHistory = await mapWithConcurrency(members, 5, async (member) => {
-        try {
-          const history = await fetchManagerHistory(member.entry)
-          return {
-            teamId: member.entry,
-            managerName: member.player_name,
-            teamName: member.entry_name,
-            history,
-            fetchFailed: false
-          }
-        } catch (err) {
-          console.error(`Failed to fetch history for ${member.player_name}:`, err)
-          return {
-            teamId: member.entry,
-            managerName: member.player_name,
-            teamName: member.entry_name,
-            history: [],
-            fetchFailed: true
-          }
-        }
-      })
-
-      // Store all data
-      setAllData({
-        periodMapping,
-        managers: managersWithHistory,
-        gameweeks: gameweeks
-      })
-
-    } catch (err) {
-      setError(err.message)
-      setLoading(false)
-    }
-  }
-
-  // Calculate standings for the selected period
-  const calculateStandings = async (periodId) => {
-    if (!allData) return
-
-    const { periodMapping, managers, gameweeks } = allData
-    const gameweeksInPeriod = periodMapping[periodId] || []
-
-    // Check if selected period contains the live gameweek
-    const isLiveGWInPeriod = liveGameweekId && isGameweekInPeriod(liveGameweekId, periodId, periodMapping)
-    setIsLiveGameweek(isLiveGWInPeriod)
-    
-    if (liveGameweekId) {
-      console.log(`Live GW${liveGameweekId} is ${isLiveGWInPeriod ? 'in' : 'not in'} selected period: ${periodId}`)
-    }
-
-    let livePlayerData = null
-    let cachedPicksByTeam = null
-    if (isLiveGWInPeriod) {
+    let cancelled = false
+    ;(async () => {
       try {
-        console.log(`Fetching live data for GW${liveGameweekId}...`)
-        livePlayerData = await fetchLiveGameweekData(liveGameweekId)
-        console.log(`Successfully fetched live data for ${livePlayerData?.length || 0} players`)
+        setLoading(true)
+        const json = await loadStandings()
+        if (cancelled) return
+        setData(json)
+        // Auto-select the period containing the live GW, else the next GW, else first.
+        const target = json.liveGameweek || json.nextGameweek
+        const period =
+          json.periods.find((p) => target && p.gameweeks.includes(target)) || json.periods[0]
+        setSelectedPeriod(period?.id ?? null)
       } catch (err) {
-        console.error('Failed to fetch live gameweek data:', err)
-        // Fall back to historical data only
-        setIsLiveGameweek(false)
+        if (!cancelled) setError(err.message)
+      } finally {
+        if (!cancelled) setLoading(false)
       }
-
-      // Prefer the prebuilt picks cache (written by the GitHub Actions cron from
-      // a non-Vercel egress) over hitting FPL's /picks/ endpoint, which the WAF
-      // blocks for Vercel-origin requests.
-      cachedPicksByTeam = await loadCachedPicks(liveGameweekId)
-      if (cachedPicksByTeam) {
-        console.log(`Using cached picks for ${Object.keys(cachedPicksByTeam).length} managers`)
-      }
+    })()
+    return () => {
+      cancelled = true
     }
+  }, [loadStandings])
 
-    // Calculate points for each manager (throttled to avoid live picks burst failures)
-    const standings = await mapWithConcurrency(managers, 5, async (manager) => {
-      const historyRows = Array.isArray(manager.history) ? manager.history : []
-      // Sum historical points (all completed GWs in period, excluding live GW)
-      const historicalPoints = historyRows
-        .filter(gw => {
-          // Include completed GWs in the period, but exclude the live GW
-          return gameweeksInPeriod.includes(gw.event) && 
-                 (!liveGameweekId || gw.event !== liveGameweekId)
-        })
-        .reduce((sum, gw) => sum + gw.points, 0)
-      
-      // Add live points if applicable
-      let livePoints = 0
+  const liveGameweek = data?.liveGameweek ?? null
+  const currentPeriod = useMemo(
+    () => data?.periods.find((p) => p.id === selectedPeriod) ?? null,
+    [data, selectedPeriod]
+  )
+  const isLiveInPeriod = Boolean(
+    liveGameweek && currentPeriod && currentPeriod.gameweeks.includes(liveGameweek)
+  )
+
+  // Whether any gameweek has been scored yet (distinguishes pre-season from a
+  // real all-zero table).
+  const seasonStarted = useMemo(() => {
+    if (!data) return false
+    if (data.liveGameweek) return true
+    return data.managers.some((m) => Object.keys(m.gwPoints || {}).length > 0)
+  }, [data])
+
+  // Fetch live player points whenever we're viewing a period with a live GW.
+  const refreshLive = useCallback(async () => {
+    if (!liveGameweek) return
+    setRefreshingLive(true)
+    try {
+      // Re-pull standings too, so newly-cached picks (cron fill-in) appear.
+      const [json, points] = await Promise.all([
+        loadStandings().catch(() => null),
+        fetchLivePlayerPoints(liveGameweek),
+      ])
+      if (json) setData(json)
+      setLivePoints(points)
+    } catch (err) {
+      console.error('Live refresh failed:', err)
+    } finally {
+      setRefreshingLive(false)
+    }
+  }, [liveGameweek, loadStandings])
+
+  useEffect(() => {
+    if (isLiveInPeriod) {
+      refreshLive()
+    } else {
+      setLivePoints(null)
+    }
+  }, [isLiveInPeriod, refreshLive])
+
+  useEffect(() => {
+    if (!isLiveInPeriod) return
+    const id = setInterval(refreshLive, LIVE_REFRESH_MS)
+    return () => clearInterval(id)
+  }, [isLiveInPeriod, refreshLive])
+
+  const standings = useMemo(() => {
+    if (!data || !currentPeriod) return []
+    const periodGWs = currentPeriod.gameweeks
+
+    const rows = data.managers.map((m) => {
+      const gwPoints = m.gwPoints || {}
+      // Sum completed GWs in this period, excluding the in-progress live GW
+      // (its points come from the live calculation instead).
+      const historical = periodGWs.reduce((sum, gw) => {
+        if (isLiveInPeriod && gw === liveGameweek) return sum
+        return sum + (gwPoints[gw] || 0)
+      }, 0)
+
+      let live = 0
       let hasLiveData = false
       let livePartial = false
-      if (isLiveGWInPeriod && livePlayerData) {
-        const cached = cachedPicksByTeam ? cachedPicksByTeam[String(manager.teamId)] : null
-        if (cached?.picks) {
-          livePoints = calculateManagerLivePoints(cached.picks, livePlayerData)
+      if (isLiveInPeriod) {
+        if (Array.isArray(m.livePicks) && m.livePicks.length > 0 && livePoints) {
+          live = m.livePicks.reduce((sum, pick) => {
+            if (pick.multiplier > 0) return sum + (livePoints[pick.element] || 0) * pick.multiplier
+            return sum
+          }, 0)
+          live -= m.liveHitCost || 0
           hasLiveData = true
         } else {
-          try {
-            const picks = await fetchManagerPicks(manager.teamId, liveGameweekId)
-            livePoints = calculateManagerLivePoints(picks, livePlayerData)
-            hasLiveData = true // Successfully fetched live data
-          } catch (err) {
-            console.error(`Failed to get live points for ${manager.managerName}:`, err)
-            // Live picks failed for this manager — historical points only, flag as partial
-            livePartial = true
-          }
+          // Cron hasn't captured this manager's picks yet — show historical only
+          // and badge it, rather than rendering a misleadingly complete score.
+          livePartial = true
         }
       }
-      
+
       return {
-        managerName: manager.managerName,
-        teamName: manager.teamName,
-        points: historicalPoints + livePoints,
+        managerName: m.managerName,
+        teamName: m.teamName,
+        points: historical + live,
+        historyFailed: Boolean(m.historyFailed),
         hasLiveData,
-        fetchFailed: manager.fetchFailed === true,
-        livePartial
+        livePartial,
       }
     })
 
-    // Sort: failed history last, then partial-live, then by points descending
-    standings.sort((a, b) => {
-      if (a.fetchFailed !== b.fetchFailed) return a.fetchFailed ? 1 : -1
-      if (a.livePartial !== b.livePartial) return a.livePartial ? 1 : -1
+    rows.sort((a, b) => {
+      if (a.historyFailed !== b.historyFailed) return a.historyFailed ? 1 : -1
       return b.points - a.points
     })
 
-    // Add rank
-    const rankedStandings = standings.map((entry, index) => ({
-      ...entry,
-      rank: index + 1
-    }))
+    // Tie-aware ranking: equal point totals share a rank.
+    let lastPoints = null
+    let lastRank = 0
+    return rows.map((row, i) => {
+      let rank
+      if (row.historyFailed) {
+        rank = null
+      } else if (row.points === lastPoints) {
+        rank = lastRank
+      } else {
+        rank = i + 1
+        lastRank = rank
+        lastPoints = row.points
+      }
+      return { ...row, rank }
+    })
+  }, [data, currentPeriod, isLiveInPeriod, liveGameweek, livePoints])
 
-    setStandings(rankedStandings)
-    setLoading(false)
-    setRefreshingLive(false)
-  }
-
-  // Handle period change
-  const handlePeriodChange = (e) => {
-    setSelectedPeriod(e.target.value)
-  }
-
-  // Handle manual refresh of live data
-  const handleManualRefresh = () => {
-    if (isLiveGameweek && allData) {
-      setRefreshingLive(true)
-      calculateStandings(selectedPeriod)
-    }
-  }
-
-  // Get current period name
-  const getCurrentPeriodName = () => {
-    const period = periods.find(p => p.id === selectedPeriod)
-    return period ? period.name : ''
-  }
+  const updatedAgo = formatUpdatedAgo(data?.dataUpdatedAt)
+  const isStale =
+    isLiveInPeriod &&
+    data?.dataUpdatedAt &&
+    Date.now() - new Date(data.dataUpdatedAt).getTime() > 30 * 60 * 1000
 
   return (
     <div className="min-h-screen bg-gray-50 py-4 sm:py-8 px-3 sm:px-4">
@@ -415,63 +195,84 @@ function App() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             FPL 2-Month League Standings
           </h1>
-          <p className="text-sm sm:text-base text-gray-600">League ID: 286461 ••• Season 2025/26</p>
+          <p className="text-sm sm:text-base text-gray-600">
+            {data?.leagueName ? `${data.leagueName} ` : ''}
+            {data ? `••• League ${data.leagueId} ••• Season ${data.season}` : ''}
+          </p>
         </div>
 
         {/* Period Selector */}
-        <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-4 sm:mb-6">
-          <div className="flex items-center justify-between mb-3">
-            <label htmlFor="period-select" className="block text-base sm:text-lg font-semibold text-gray-700">
-              Select 2-Month Period:
-            </label>
-            {isLiveGameweek && (
-              <span className="inline-flex items-center px-2 sm:px-3 py-1 text-xs sm:text-sm font-semibold text-red-600 bg-red-50 rounded-full">
-                🔴 LIVE
-              </span>
-            )}
-          </div>
-          <div className="flex gap-2 sm:gap-3">
-            <select
-              id="period-select"
-              value={selectedPeriod}
-              onChange={handlePeriodChange}
-              disabled={loading && !allData}
-              className="flex-1 px-3 sm:px-4 py-2 sm:py-3 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
-            >
-              {periods.map(period => (
-                <option key={period.id} value={period.id}>
-                  {period.name}
-                </option>
-              ))}
-            </select>
-            {isLiveGameweek && (
-              <button
-                onClick={handleManualRefresh}
-                disabled={refreshingLive}
-                className="px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
+        {data && (
+          <div className="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-4 sm:mb-6">
+            <div className="flex items-center justify-between mb-3">
+              <label
+                htmlFor="period-select"
+                className="block text-base sm:text-lg font-semibold text-gray-700"
               >
-                {refreshingLive ? (
-                  <>
-                    <div className="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
-                    <span className="hidden sm:inline">Refreshing...</span>
-                  </>
-                ) : (
-                  <>
-                    <span>🔄</span>
-                    <span className="hidden sm:inline">Refresh</span>
-                  </>
+                Select 2-Month Period:
+              </label>
+              {isLiveInPeriod && (
+                <span className="inline-flex items-center px-2 sm:px-3 py-1 text-xs sm:text-sm font-semibold text-red-600 bg-red-50 rounded-full">
+                  🔴 LIVE
+                </span>
+              )}
+            </div>
+            <div className="flex gap-2 sm:gap-3">
+              <select
+                id="period-select"
+                value={selectedPeriod ?? ''}
+                onChange={(e) => setSelectedPeriod(e.target.value)}
+                className="flex-1 px-3 sm:px-4 py-2 sm:py-3 text-base sm:text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              >
+                {data.periods.map((period) => {
+                  const gws = period.gameweeks
+                  const range = gws.length ? ` (GW${gws[0]}-${gws[gws.length - 1]})` : ''
+                  return (
+                    <option key={period.id} value={period.id}>
+                      {period.name}
+                      {range}
+                    </option>
+                  )
+                })}
+              </select>
+              {isLiveInPeriod && (
+                <button
+                  onClick={refreshLive}
+                  disabled={refreshingLive}
+                  className="px-3 sm:px-4 py-2 sm:py-3 text-sm sm:text-base font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed transition-colors flex items-center gap-2"
+                >
+                  {refreshingLive ? (
+                    <>
+                      <div className="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                      <span className="hidden sm:inline">Refreshing...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>🔄</span>
+                      <span className="hidden sm:inline">Refresh</span>
+                    </>
+                  )}
+                </button>
+              )}
+            </div>
+            {updatedAgo && (
+              <p className="mt-3 text-xs text-gray-500">
+                Data updated {updatedAgo}
+                {isStale && (
+                  <span className="ml-2 text-orange-600 font-medium">
+                    ⚠ live data may be stale
+                  </span>
                 )}
-              </button>
+              </p>
             )}
           </div>
-        </div>
+        )}
 
         {/* Loading State */}
         {loading && (
           <div className="bg-white rounded-lg shadow-md p-12 text-center">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4"></div>
             <p className="text-gray-600 text-lg">Loading league data...</p>
-            <p className="text-gray-500 text-sm mt-2">This may take a moment as we fetch data for all managers</p>
           </div>
         )}
 
@@ -481,7 +282,7 @@ function App() {
             <h3 className="text-red-800 font-semibold text-lg mb-2">Error Loading Data</h3>
             <p className="text-red-600">{error}</p>
             <button
-              onClick={fetchAllData}
+              onClick={() => window.location.reload()}
               className="mt-4 px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
             >
               Retry
@@ -489,12 +290,38 @@ function App() {
           </div>
         )}
 
+        {/* Pre-season State */}
+        {!loading && !error && data && !seasonStarted && (
+          <div className="bg-white rounded-lg shadow-md p-8 sm:p-12 text-center">
+            <div className="text-4xl mb-3">⚽</div>
+            <p className="text-gray-800 text-lg font-semibold mb-2">
+              The {data.season} season hasn't kicked off yet
+            </p>
+            <p className="text-gray-600 text-sm mb-4">
+              {data.managers.length} managers are signed up. Standings will appear once GW
+              {data.nextGameweek} is scored.
+            </p>
+            {data.nextDeadline && (
+              <p className="text-gray-500 text-sm">
+                First deadline:{' '}
+                {new Date(data.nextDeadline).toLocaleString(undefined, {
+                  weekday: 'short',
+                  day: 'numeric',
+                  month: 'short',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                })}
+              </p>
+            )}
+          </div>
+        )}
+
         {/* Standings Table */}
-        {!loading && !error && standings.length > 0 && (
+        {!loading && !error && data && seasonStarted && currentPeriod && (
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-4 sm:px-6 py-3 sm:py-4">
               <h2 className="text-xl sm:text-2xl font-bold text-white">
-                {getCurrentPeriodName()} Standings{isLiveGameweek && ' 🔴 LIVE'}
+                {currentPeriod.name} Standings{isLiveInPeriod && ' 🔴 LIVE'}
               </h2>
             </div>
             <div className="overflow-x-auto">
@@ -524,13 +351,18 @@ function App() {
                       }`}
                     >
                       <td className="px-2 sm:px-4 py-3 whitespace-nowrap">
-                        <span className={`inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full font-bold text-sm ${
-                          entry.rank === 1 ? 'bg-yellow-100 text-yellow-800' :
-                          entry.rank === 2 ? 'bg-gray-100 text-gray-800' :
-                          entry.rank === 3 ? 'bg-orange-100 text-orange-800' :
-                          'bg-blue-50 text-blue-800'
-                        }`}>
-                          {entry.rank}
+                        <span
+                          className={`inline-flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 rounded-full font-bold text-sm ${
+                            entry.rank === 1
+                              ? 'bg-yellow-100 text-yellow-800'
+                              : entry.rank === 2
+                              ? 'bg-gray-100 text-gray-800'
+                              : entry.rank === 3
+                              ? 'bg-orange-100 text-orange-800'
+                              : 'bg-blue-50 text-blue-800'
+                          }`}
+                        >
+                          {entry.rank ?? '—'}
                         </span>
                       </td>
                       <td className="px-2 sm:px-4 py-3 text-gray-900 font-medium text-sm sm:text-base">
@@ -543,14 +375,15 @@ function App() {
                         {entry.teamName}
                       </td>
                       <td className="px-2 sm:px-4 py-3 text-right">
-                        {entry.fetchFailed ? (
+                        {entry.historyFailed ? (
                           <span className="inline-block px-2 py-1 text-xs font-semibold text-yellow-800 bg-yellow-100 rounded">
                             data unavailable
                           </span>
                         ) : (
                           <div className="flex flex-col items-end gap-1">
                             <span className="text-base sm:text-lg font-bold text-gray-900">
-                              {entry.points}{entry.hasLiveData && ' 🔴'}
+                              {entry.points}
+                              {entry.hasLiveData && ' 🔴'}
                             </span>
                             {entry.livePartial && (
                               <span className="inline-block px-2 py-0.5 text-[10px] sm:text-xs font-semibold text-orange-800 bg-orange-100 rounded whitespace-nowrap">
@@ -567,17 +400,9 @@ function App() {
             </div>
           </div>
         )}
-
-        {/* No Data State */}
-        {!loading && !error && standings.length === 0 && allData && (
-          <div className="bg-white rounded-lg shadow-md p-12 text-center">
-            <p className="text-gray-600 text-lg">No data available for this period</p>
-          </div>
-        )}
       </div>
     </div>
   )
 }
 
 export default App
-

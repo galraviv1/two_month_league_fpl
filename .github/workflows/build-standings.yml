@@ -1,19 +1,19 @@
-name: Refresh live picks
+name: Build standings
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: refresh-picks
+  group: build-standings
   cancel-in-progress: false
 
 jobs:
-  refresh:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,16 +22,16 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Run refresh-picks script
-        run: node scripts/refresh-picks.mjs
+      - name: Build standings.json
+        run: node scripts/build-standings.mjs
 
       - name: Commit and push if changed
         run: |
-          if [[ -n "$(git status --porcelain public/data/live-picks.json)" ]]; then
+          if [[ -n "$(git status --porcelain public/data/standings.json)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public/data/live-picks.json
-            git commit -m "chore: refresh live picks"
+            git add public/data/standings.json
+            git commit -m "chore: rebuild standings"
             git push
           else
             echo "No changes to commit."

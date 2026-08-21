@@ -5,25 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
+    // In dev, proxy the one live endpoint the app uses straight to FPL. All
+    // other data comes from the static public/data/standings.json file.
     proxy: {
-      '/api/bootstrap-static': {
-        target: 'https://fantasy.premierleague.com',
-        changeOrigin: true,
-        rewrite: (path) => '/api/bootstrap-static/',
-        secure: false,
-      },
-      '/api/leagues-classic': {
-        target: 'https://fantasy.premierleague.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/api'),
-        secure: false,
-      },
-      '/api/entry': {
-        target: 'https://fantasy.premierleague.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/api'),
-        secure: false,
-      },
       '/api/event': {
         target: 'https://fantasy.premierleague.com',
         changeOrigin: true,
