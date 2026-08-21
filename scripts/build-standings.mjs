@@ -270,18 +270,24 @@ async function main() {
       `${priorPicksByEntry.size}/${managers.length} total cached for GW${liveGameweek}.`)
   }
 
-  const outputManagers = managers.map((m) => {
-    const cached = priorPicksByEntry.get(m.entry)
-    return {
-      entry: m.entry,
-      managerName: m.managerName,
-      teamName: m.teamName,
-      gwPoints: m.gwPoints,
-      historyFailed: m.historyFailed,
-      livePicks: cached ? cached.livePicks : [],
-      liveHitCost: cached ? cached.liveHitCost : 0,
-    }
-  })
+  // Sort by entry id so the output is deterministic; FPL returns new_entries in
+  // an unstable order, and without this the file would churn (and the cron would
+  // commit) on every run even when nothing meaningful changed.
+  const outputManagers = managers
+    .slice()
+    .sort((a, b) => a.entry - b.entry)
+    .map((m) => {
+      const cached = priorPicksByEntry.get(m.entry)
+      return {
+        entry: m.entry,
+        managerName: m.managerName,
+        teamName: m.teamName,
+        gwPoints: m.gwPoints,
+        historyFailed: m.historyFailed,
+        livePicks: cached ? cached.livePicks : [],
+        liveHitCost: cached ? cached.liveHitCost : 0,
+      }
+    })
 
   const output = {
     season: SEASON_LABEL,

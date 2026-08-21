@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-21T14:49:59.260Z",
+  "dataUpdatedAt": "2026-08-21T14:50:50.935Z",
   "liveGameweek": null,
   "nextGameweek": 1,
   "nextDeadline": "2026-08-21T17:30:00Z",
@@ -78,234 +78,9 @@
   ],
   "managers": [
     {
-      "entry": 8227379,
-      "managerName": "Yuval Yakobi",
-      "teamName": "Big Y's",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 7905290,
-      "managerName": "Adir Sabag",
-      "teamName": "Mandem FC",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 7510140,
-      "managerName": "Paz Shakroka",
-      "teamName": "Old Stamford",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 1367096,
-      "managerName": "Lidor Admoni",
-      "teamName": "lidor",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 1338773,
-      "managerName": "Lion Zocowitzky",
-      "teamName": "Lion's Team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 4625393,
-      "managerName": "Liran Kashtarian",
-      "teamName": "Liri's team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 6209802,
-      "managerName": "Roei Eitan",
-      "teamName": "Roei's team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 6166530,
-      "managerName": "Guy Geva-Iluz",
-      "teamName": "Big Red Iraolas",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 6023259,
-      "managerName": "Neil Rosmann",
-      "teamName": "Neil's Team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 5154980,
-      "managerName": "Ziv Christoph",
-      "teamName": "bukagay",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 5040601,
-      "managerName": "ido mor",
-      "teamName": "mor7",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 4815131,
-      "managerName": "Idan Cohen",
-      "teamName": "cohen 26",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 4665602,
-      "managerName": "Dor Cohen",
-      "teamName": "Dor's Team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 3801415,
-      "managerName": "Uriya Yakobi",
-      "teamName": "SecondTimers",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 2528374,
-      "managerName": "Amir Pliner",
-      "teamName": "Amirs team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 2133618,
-      "managerName": "Elad Prizant",
-      "teamName": "Kinder Mbeumo",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
       "entry": 114852,
       "managerName": "Lotan Levi",
       "teamName": "Game of Stones",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 1812675,
-      "managerName": "ניר אזר",
-      "teamName": "Azar Team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 244369,
-      "managerName": "Gal Raviv",
-      "teamName": "Gal's Team",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 916480,
-      "managerName": "Ido Rivlin",
-      "teamName": "the rivlins",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 595041,
-      "managerName": "Aviv Liefer",
-      "teamName": "heta paleeds",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 251414,
-      "managerName": "Guy Kol",
-      "teamName": "urdoun till i die",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 1584466,
-      "managerName": "Dor Chen",
-      "teamName": "guèhi tzall mavett",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 879741,
-      "managerName": "Rani Bar Dayan",
-      "teamName": "Silva",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 1288541,
-      "managerName": "Guy Chen",
-      "teamName": "A Cunha mateta",
-      "gwPoints": {},
-      "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
-    },
-    {
-      "entry": 206815,
-      "managerName": "koren kalai",
-      "teamName": "saka shel kaka",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
@@ -321,9 +96,36 @@
       "liveHitCost": 0
     },
     {
-      "entry": 1406310,
-      "managerName": "Amit Mor",
-      "teamName": "FC MOR",
+      "entry": 206815,
+      "managerName": "koren kalai",
+      "teamName": "saka shel kaka",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 244369,
+      "managerName": "Gal Raviv",
+      "teamName": "Gal's Team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 251414,
+      "managerName": "Guy Kol",
+      "teamName": "urdoun till i die",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 595041,
+      "managerName": "Aviv Liefer",
+      "teamName": "heta paleeds",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
@@ -339,9 +141,18 @@
       "liveHitCost": 0
     },
     {
-      "entry": 1904952,
-      "managerName": "Liam rakin",
-      "teamName": "Back to Back",
+      "entry": 879741,
+      "managerName": "Rani Bar Dayan",
+      "teamName": "Silva",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 916480,
+      "managerName": "Ido Rivlin",
+      "teamName": "the rivlins",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
@@ -351,6 +162,195 @@
       "entry": 959578,
       "managerName": "Ilay Konfeld",
       "teamName": "Konfeld",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 1288541,
+      "managerName": "Guy Chen",
+      "teamName": "A Cunha mateta",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 1338773,
+      "managerName": "Lion Zocowitzky",
+      "teamName": "Lion's Team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 1367096,
+      "managerName": "Lidor Admoni",
+      "teamName": "lidor",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 1406310,
+      "managerName": "Amit Mor",
+      "teamName": "FC MOR",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 1584466,
+      "managerName": "Dor Chen",
+      "teamName": "guèhi tzall mavett",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 1812675,
+      "managerName": "ניר אזר",
+      "teamName": "Azar Team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 1904952,
+      "managerName": "Liam rakin",
+      "teamName": "Back to Back",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 2133618,
+      "managerName": "Elad Prizant",
+      "teamName": "Kinder Mbeumo",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 2528374,
+      "managerName": "Amir Pliner",
+      "teamName": "Amirs team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 3801415,
+      "managerName": "Uriya Yakobi",
+      "teamName": "SecondTimers",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 4625393,
+      "managerName": "Liran Kashtarian",
+      "teamName": "Liri's team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 4665602,
+      "managerName": "Dor Cohen",
+      "teamName": "Dor's Team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 4815131,
+      "managerName": "Idan Cohen",
+      "teamName": "cohen 26",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 5040601,
+      "managerName": "ido mor",
+      "teamName": "mor7",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 5154980,
+      "managerName": "Ziv Christoph",
+      "teamName": "bukagay",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 6023259,
+      "managerName": "Neil Rosmann",
+      "teamName": "Neil's Team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 6166530,
+      "managerName": "Guy Geva-Iluz",
+      "teamName": "Big Red Iraolas",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 6209802,
+      "managerName": "Roei Eitan",
+      "teamName": "Roei's team",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 7510140,
+      "managerName": "Paz Shakroka",
+      "teamName": "Old Stamford",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 7905290,
+      "managerName": "Adir Sabag",
+      "teamName": "Mandem FC",
+      "gwPoints": {},
+      "historyFailed": false,
+      "livePicks": [],
+      "liveHitCost": 0
+    },
+    {
+      "entry": 8227379,
+      "managerName": "Yuval Yakobi",
+      "teamName": "Big Y's",
       "gwPoints": {},
       "historyFailed": false,
       "livePicks": [],
