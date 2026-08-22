@@ -35,6 +35,7 @@ function App() {
   const [error, setError] = useState(null)
   const [selectedPeriod, setSelectedPeriod] = useState(null)
   const [livePoints, setLivePoints] = useState(null) // { [element]: points }
+  const [liveUpdatedAt, setLiveUpdatedAt] = useState(null) // last successful live fetch
   const [refreshingLive, setRefreshingLive] = useState(false)
 
   const loadStandings = useCallback(async () => {
@@ -96,6 +97,7 @@ function App() {
       ])
       if (json) setData(json)
       setLivePoints(points)
+      setLiveUpdatedAt(Date.now())
     } catch (err) {
       console.error('Live refresh failed:', err)
     } finally {
@@ -181,11 +183,20 @@ function App() {
     })
   }, [data, currentPeriod, isLiveInPeriod, liveGameweek, livePoints])
 
-  const updatedAgo = formatUpdatedAgo(data?.dataUpdatedAt)
+  // During a live GW the on-screen scores come from the live endpoint (refreshed
+  // every 2 min), NOT from the static file — whose timestamp reflects the picks,
+  // which are intentionally frozen at the deadline. So report freshness against
+  // the last live fetch when live, and against the file otherwise.
+  const updatedLabel = isLiveInPeriod
+    ? liveUpdatedAt
+      ? `Live points refreshed ${formatUpdatedAgo(liveUpdatedAt)}`
+      : null
+    : data?.dataUpdatedAt
+    ? `Data updated ${formatUpdatedAgo(data.dataUpdatedAt)}`
+    : null
+  // Only warn if the live auto-refresh itself has stopped succeeding.
   const isStale =
-    isLiveInPeriod &&
-    data?.dataUpdatedAt &&
-    Date.now() - new Date(data.dataUpdatedAt).getTime() > 30 * 60 * 1000
+    isLiveInPeriod && liveUpdatedAt && Date.now() - liveUpdatedAt > 10 * 60 * 1000
 
   return (
     <div className="min-h-screen bg-gray-50 py-4 sm:py-8 px-3 sm:px-4">
@@ -255,9 +266,9 @@ function App() {
                 </button>
               )}
             </div>
-            {updatedAgo && (
+            {updatedLabel && (
               <p className="mt-3 text-xs text-gray-500">
-                Data updated {updatedAgo}
+                {updatedLabel}
                 {isStale && (
                   <span className="ml-2 text-orange-600 font-medium">
                     ⚠ live data may be stale
