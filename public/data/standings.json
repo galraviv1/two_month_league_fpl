@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-21T22:39:10.382Z",
+  "dataUpdatedAt": "2026-08-22T20:10:16.084Z",
   "liveGameweek": 1,
   "nextGameweek": 2,
   "nextDeadline": "2026-08-28T17:30:00Z",
@@ -82,7 +82,7 @@
       "managerName": "Lotan Levi",
       "teamName": "Game of Stones",
       "gwPoints": {
-        "1": 15
+        "1": 28
       },
       "historyFailed": false,
       "livePicks": [
@@ -154,7 +154,7 @@
       "managerName": "Lidor Gonen",
       "teamName": "70% Water 30% Moises",
       "gwPoints": {
-        "1": 15
+        "1": 33
       },
       "historyFailed": false,
       "livePicks": [
@@ -226,7 +226,7 @@
       "managerName": "koren kalai",
       "teamName": "saka shel kaka",
       "gwPoints": {
-        "1": 14
+        "1": 30
       },
       "historyFailed": false,
       "livePicks": [
@@ -298,7 +298,7 @@
       "managerName": "Gal Raviv",
       "teamName": "Gal's Team",
       "gwPoints": {
-        "1": 21
+        "1": 30
       },
       "historyFailed": false,
       "livePicks": [
@@ -370,7 +370,7 @@
       "managerName": "Guy Kol",
       "teamName": "urdoun till i die",
       "gwPoints": {
-        "1": 0
+        "1": 12
       },
       "historyFailed": false,
       "livePicks": [
@@ -442,7 +442,7 @@
       "managerName": "Aviv Liefer",
       "teamName": "heta paleeds",
       "gwPoints": {
-        "1": 26
+        "1": 47
       },
       "historyFailed": false,
       "livePicks": [
@@ -514,7 +514,7 @@
       "managerName": "Tom Felsenfeld",
       "teamName": "Fantasy Fanatics",
       "gwPoints": {
-        "1": 21
+        "1": 26
       },
       "historyFailed": false,
       "livePicks": [
@@ -586,7 +586,7 @@
       "managerName": "Rani Bar Dayan",
       "teamName": "Silva",
       "gwPoints": {
-        "1": 11
+        "1": 20
       },
       "historyFailed": false,
       "livePicks": [
@@ -658,7 +658,7 @@
       "managerName": "Ido Rivlin",
       "teamName": "the rivlins",
       "gwPoints": {
-        "1": 15
+        "1": 47
       },
       "historyFailed": false,
       "livePicks": [
@@ -730,7 +730,7 @@
       "managerName": "Ilay Konfeld",
       "teamName": "Konfeld",
       "gwPoints": {
-        "1": 9
+        "1": 22
       },
       "historyFailed": false,
       "livePicks": [
@@ -802,7 +802,7 @@
       "managerName": "Guy Chen",
       "teamName": "A Cunha mateta",
       "gwPoints": {
-        "1": 18
+        "1": 25
       },
       "historyFailed": false,
       "livePicks": [
@@ -874,7 +874,7 @@
       "managerName": "Lion Zocowitzky",
       "teamName": "Lion's Team",
       "gwPoints": {
-        "1": 15
+        "1": 20
       },
       "historyFailed": false,
       "livePicks": [
@@ -946,7 +946,7 @@
       "managerName": "Lidor Admoni",
       "teamName": "lidor",
       "gwPoints": {
-        "1": 21
+        "1": 27
       },
       "historyFailed": false,
       "livePicks": [
@@ -1018,7 +1018,7 @@
       "managerName": "Amit Mor",
       "teamName": "FC MOR",
       "gwPoints": {
-        "1": 21
+        "1": 25
       },
       "historyFailed": false,
       "livePicks": [
@@ -1090,7 +1090,7 @@
       "managerName": "Dor Chen",
       "teamName": "guèhi tzall mavett",
       "gwPoints": {
-        "1": 15
+        "1": 24
       },
       "historyFailed": false,
       "livePicks": [
@@ -1162,7 +1162,7 @@
       "managerName": "ניר אזר",
       "teamName": "Azar Team",
       "gwPoints": {
-        "1": 15
+        "1": 23
       },
       "historyFailed": false,
       "livePicks": [
@@ -1234,7 +1234,7 @@
       "managerName": "Liam rakin",
       "teamName": "Back to Back",
       "gwPoints": {
-        "1": 17
+        "1": 19
       },
       "historyFailed": false,
       "livePicks": [
@@ -1306,7 +1306,7 @@
       "managerName": "Elad Prizant",
       "teamName": "Kinder Mbeumo",
       "gwPoints": {
-        "1": 15
+        "1": 26
       },
       "historyFailed": false,
       "livePicks": [
@@ -1378,7 +1378,7 @@
       "managerName": "Amir Pliner",
       "teamName": "Amirs team",
       "gwPoints": {
-        "1": 9
+        "1": 17
       },
       "historyFailed": false,
       "livePicks": [
@@ -1450,7 +1450,7 @@
       "managerName": "Uriya Yakobi",
       "teamName": "SecondTimers",
       "gwPoints": {
-        "1": 9
+        "1": 38
       },
       "historyFailed": false,
       "livePicks": [
@@ -1522,7 +1522,7 @@
       "managerName": "Liran Kashtarian",
       "teamName": "Liri's team",
       "gwPoints": {
-        "1": 15
+        "1": 31
       },
       "historyFailed": false,
       "livePicks": [
@@ -1594,7 +1594,7 @@
       "managerName": "Dor Cohen",
       "teamName": "Dor's Team",
       "gwPoints": {
-        "1": 15
+        "1": 27
       },
       "historyFailed": false,
       "livePicks": [
@@ -1666,7 +1666,7 @@
       "managerName": "Idan Cohen",
       "teamName": "cohen 26",
       "gwPoints": {
-        "1": 21
+        "1": 35
       },
       "historyFailed": false,
       "livePicks": [
@@ -1738,7 +1738,7 @@
       "managerName": "ido mor",
       "teamName": "mor7",
       "gwPoints": {
-        "1": 15
+        "1": 27
       },
       "historyFailed": false,
       "livePicks": [
@@ -1810,7 +1810,7 @@
       "managerName": "Ziv Christoph",
       "teamName": "bukagay",
       "gwPoints": {
-        "1": 9
+        "1": 19
       },
       "historyFailed": false,
       "livePicks": [
@@ -1882,7 +1882,7 @@
       "managerName": "Neil Rosmann",
       "teamName": "Neil's Team",
       "gwPoints": {
-        "1": 17
+        "1": 32
       },
       "historyFailed": false,
       "livePicks": [
@@ -1954,7 +1954,7 @@
       "managerName": "Guy Geva-Iluz",
       "teamName": "Big Red Iraolas",
       "gwPoints": {
-        "1": 21
+        "1": 27
       },
       "historyFailed": false,
       "livePicks": [
@@ -2026,7 +2026,7 @@
       "managerName": "Roei Eitan",
       "teamName": "Roei's team",
       "gwPoints": {
-        "1": 16
+        "1": 21
       },
       "historyFailed": false,
       "livePicks": [
@@ -2098,7 +2098,7 @@
       "managerName": "Paz Shakroka",
       "teamName": "Old Stamford",
       "gwPoints": {
-        "1": 9
+        "1": 25
       },
       "historyFailed": false,
       "livePicks": [
@@ -2170,7 +2170,7 @@
       "managerName": "Adir Sabag",
       "teamName": "Mandem FC",
       "gwPoints": {
-        "1": 15
+        "1": 20
       },
       "historyFailed": false,
       "livePicks": [
@@ -2242,7 +2242,7 @@
       "managerName": "Yuval Yakobi",
       "teamName": "Big Y's",
       "gwPoints": {
-        "1": 15
+        "1": 38
       },
       "historyFailed": false,
       "livePicks": [
