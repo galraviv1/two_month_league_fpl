@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-24T22:14:17.882Z",
+  "dataUpdatedAt": "2026-08-25T09:59:57.577Z",
   "liveGameweek": 1,
   "nextGameweek": 2,
   "nextDeadline": "2026-08-28T17:30:00Z",
@@ -226,7 +226,7 @@
       "managerName": "koren kalai",
       "teamName": "saka shel kaka",
       "gwPoints": {
-        "1": 53
+        "1": 70
       },
       "historyFailed": false,
       "livePicks": [
@@ -370,7 +370,7 @@
       "managerName": "Guy Kol",
       "teamName": "urdoun till i die",
       "gwPoints": {
-        "1": 41
+        "1": 42
       },
       "historyFailed": false,
       "livePicks": [
@@ -586,7 +586,7 @@
       "managerName": "Rani Bar Dayan",
       "teamName": "Silva",
       "gwPoints": {
-        "1": 28
+        "1": 30
       },
       "historyFailed": false,
       "livePicks": [
@@ -1162,7 +1162,7 @@
       "managerName": "ניר אזר",
       "teamName": "Azar Team",
       "gwPoints": {
-        "1": 63
+        "1": 69
       },
       "historyFailed": false,
       "livePicks": [
@@ -1810,7 +1810,7 @@
       "managerName": "Ziv Christoph",
       "teamName": "bukagay",
       "gwPoints": {
-        "1": 36
+        "1": 42
       },
       "historyFailed": false,
       "livePicks": [
@@ -1954,7 +1954,7 @@
       "managerName": "Guy Geva-Iluz",
       "teamName": "Big Red Iraolas",
       "gwPoints": {
-        "1": 37
+        "1": 38
       },
       "historyFailed": false,
       "livePicks": [
@@ -2170,7 +2170,7 @@
       "managerName": "Adir Sabag",
       "teamName": "Mandem FC",
       "gwPoints": {
-        "1": 75
+        "1": 76
       },
       "historyFailed": false,
       "livePicks": [
