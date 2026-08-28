@@ -2,10 +2,10 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-25T13:09:02.478Z",
-  "liveGameweek": null,
-  "nextGameweek": 2,
-  "nextDeadline": "2026-08-28T17:30:00Z",
+  "dataUpdatedAt": "2026-08-28T22:41:46.187Z",
+  "liveGameweek": 2,
+  "nextGameweek": 3,
+  "nextDeadline": "2026-09-04T17:30:00Z",
   "periods": [
     {
       "id": "aug-sep",
@@ -82,10 +82,72 @@
       "managerName": "Lotan Levi",
       "teamName": "Game of Stones",
       "gwPoints": {
-        "1": 43
+        "1": 43,
+        "2": 13
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 469,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 542,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 272,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -93,10 +155,72 @@
       "managerName": "Lidor Gonen",
       "teamName": "70% Water 30% Moises",
       "gwPoints": {
-        "1": 50
+        "1": 50,
+        "2": 18
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 534,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 469,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -104,10 +228,72 @@
       "managerName": "koren kalai",
       "teamName": "saka shel kaka",
       "gwPoints": {
-        "1": 70
+        "1": 70,
+        "2": 13
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 173,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 115,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        },
+        {
+          "element": 321,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -115,10 +301,72 @@
       "managerName": "Gal Raviv",
       "teamName": "Gal's Team",
       "gwPoints": {
-        "1": 55
+        "1": 55,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 542,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -126,10 +374,72 @@
       "managerName": "Guy Kol",
       "teamName": "urdoun till i die",
       "gwPoints": {
-        "1": 42
+        "1": 42,
+        "2": 22
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 201,
+          "multiplier": 1
+        },
+        {
+          "element": 357,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 541,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 2
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 398,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 223,
+          "multiplier": 1
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 483,
+          "multiplier": 0
+        },
+        {
+          "element": 121,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -137,10 +447,72 @@
       "managerName": "Aviv Liefer",
       "teamName": "heta paleeds",
       "gwPoints": {
-        "1": 67
+        "1": 67,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 10,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 237,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 304,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -148,10 +520,72 @@
       "managerName": "Tom Felsenfeld",
       "teamName": "Fantasy Fanatics",
       "gwPoints": {
-        "1": 55
+        "1": 55,
+        "2": 26
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 358,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 367,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 534,
+          "multiplier": 0
+        },
+        {
+          "element": 514,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -159,10 +593,72 @@
       "managerName": "Rani Bar Dayan",
       "teamName": "Silva",
       "gwPoints": {
-        "1": 30
+        "1": 30,
+        "2": 18
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 481,
+          "multiplier": 1
+        },
+        {
+          "element": 67,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 295,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        },
+        {
+          "element": 113,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -170,10 +666,72 @@
       "managerName": "Ido Rivlin",
       "teamName": "the rivlins",
       "gwPoints": {
-        "1": 70
+        "1": 70,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 532,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 565,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        },
+        {
+          "element": 87,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -181,10 +739,72 @@
       "managerName": "Ilay Konfeld",
       "teamName": "Konfeld",
       "gwPoints": {
-        "1": 53
+        "1": 53,
+        "2": 31
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 87,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 504,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -192,10 +812,72 @@
       "managerName": "Guy Chen",
       "teamName": "A Cunha mateta",
       "gwPoints": {
-        "1": 57
+        "1": 57,
+        "2": 13
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 536,
+          "multiplier": 1
+        },
+        {
+          "element": 11,
+          "multiplier": 1
+        },
+        {
+          "element": 417,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 2
+        },
+        {
+          "element": 428,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 58,
+          "multiplier": 0
+        },
+        {
+          "element": 391,
+          "multiplier": 0
+        },
+        {
+          "element": 469,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -203,10 +885,72 @@
       "managerName": "Lion Zocowitzky",
       "teamName": "Lion's Team",
       "gwPoints": {
-        "1": 47
+        "1": 47,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 534,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 59,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        },
+        {
+          "element": 290,
+          "multiplier": 0
+        },
+        {
+          "element": 304,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -214,10 +958,72 @@
       "managerName": "Lidor Admoni",
       "teamName": "lidor",
       "gwPoints": {
-        "1": 46
+        "1": 46,
+        "2": 18
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 305,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 175,
+          "multiplier": 1
+        },
+        {
+          "element": 173,
+          "multiplier": 1
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -225,10 +1031,72 @@
       "managerName": "Amit Mor",
       "teamName": "FC MOR",
       "gwPoints": {
-        "1": 52
+        "1": 52,
+        "2": 33
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 542,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 346,
+          "multiplier": 0
+        },
+        {
+          "element": 534,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -236,10 +1104,72 @@
       "managerName": "Dor Chen",
       "teamName": "guèhi tzall mavett",
       "gwPoints": {
-        "1": 48
+        "1": 48,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 412,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 58,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 212,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -247,10 +1177,72 @@
       "managerName": "ניר אזר",
       "teamName": "Azar Team",
       "gwPoints": {
-        "1": 69
+        "1": 69,
+        "2": 18
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 88,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 212,
+          "multiplier": 0
+        },
+        {
+          "element": 272,
+          "multiplier": 0
+        },
+        {
+          "element": 473,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -258,10 +1250,72 @@
       "managerName": "Liam rakin",
       "teamName": "Back to Back",
       "gwPoints": {
-        "1": 55
+        "1": 55,
+        "2": 18
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 11,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 2
+        },
+        {
+          "element": 254,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 111,
+          "multiplier": 0
+        },
+        {
+          "element": 237,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -269,10 +1323,72 @@
       "managerName": "Elad Prizant",
       "teamName": "Kinder Mbeumo",
       "gwPoints": {
-        "1": 48
+        "1": 48,
+        "2": 35
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 412,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 229,
+          "multiplier": 1
+        },
+        {
+          "element": 532,
+          "multiplier": 1
+        },
+        {
+          "element": 175,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 398,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 504,
+          "multiplier": 0
+        },
+        {
+          "element": 321,
+          "multiplier": 0
+        },
+        {
+          "element": 290,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -280,10 +1396,72 @@
       "managerName": "Amir Pliner",
       "teamName": "Amirs team",
       "gwPoints": {
-        "1": 48
+        "1": 48,
+        "2": 13
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 88,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 2
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 532,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 304,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -291,10 +1469,72 @@
       "managerName": "Uriya Yakobi",
       "teamName": "SecondTimers",
       "gwPoints": {
-        "1": 60
+        "1": 60,
+        "2": 31
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 87,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 94,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        },
+        {
+          "element": 229,
+          "multiplier": 0
+        },
+        {
+          "element": 304,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -302,10 +1542,72 @@
       "managerName": "Liran Kashtarian",
       "teamName": "Liri's team",
       "gwPoints": {
-        "1": 57
+        "1": 57,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 542,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 273,
+          "multiplier": 0
+        },
+        {
+          "element": 499,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 321,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -313,10 +1615,72 @@
       "managerName": "Dor Cohen",
       "teamName": "Dor's Team",
       "gwPoints": {
-        "1": 48
+        "1": 48,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 88,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 488,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 249,
+          "multiplier": 0
+        },
+        {
+          "element": 204,
+          "multiplier": 0
+        },
+        {
+          "element": 502,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -324,10 +1688,72 @@
       "managerName": "Idan Cohen",
       "teamName": "cohen 26",
       "gwPoints": {
-        "1": 60
+        "1": 60,
+        "2": 13
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 142,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 250,
+          "multiplier": 0
+        },
+        {
+          "element": 115,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -335,10 +1761,72 @@
       "managerName": "ido mor",
       "teamName": "mor7",
       "gwPoints": {
-        "1": 55
+        "1": 55,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 140,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 362,
+          "multiplier": 0
+        },
+        {
+          "element": 542,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -346,10 +1834,72 @@
       "managerName": "Ziv Christoph",
       "teamName": "bukagay",
       "gwPoints": {
-        "1": 42
+        "1": 42,
+        "2": 15
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 542,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 236,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        },
+        {
+          "element": 323,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -357,10 +1907,72 @@
       "managerName": "Neil Rosmann",
       "teamName": "Neil's Team",
       "gwPoints": {
-        "1": 48
+        "1": 48,
+        "2": 33
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 388,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 260,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 586,
+          "multiplier": 0
+        },
+        {
+          "element": 43,
+          "multiplier": 0
+        },
+        {
+          "element": 303,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -368,10 +1980,72 @@
       "managerName": "Guy Geva-Iluz",
       "teamName": "Big Red Iraolas",
       "gwPoints": {
-        "1": 38
+        "1": 38,
+        "2": 28
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 499,
+          "multiplier": 1
+        },
+        {
+          "element": 387,
+          "multiplier": 1
+        },
+        {
+          "element": 369,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 260,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 481,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 539,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -379,10 +2053,72 @@
       "managerName": "Roei Eitan",
       "teamName": "Roei's team",
       "gwPoints": {
-        "1": 46
+        "1": 46,
+        "2": 26
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 175,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 536,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 455,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 542,
+          "multiplier": 1
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 184,
+          "multiplier": 0
+        },
+        {
+          "element": 87,
+          "multiplier": 0
+        },
+        {
+          "element": 149,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -390,10 +2126,72 @@
       "managerName": "Paz Shakroka",
       "teamName": "Old Stamford",
       "gwPoints": {
-        "1": 63
+        "1": 63,
+        "2": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 358,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 94,
+          "multiplier": 1
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 200,
+          "multiplier": 0
+        },
+        {
+          "element": 304,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -401,10 +2199,72 @@
       "managerName": "Adir Sabag",
       "teamName": "Mandem FC",
       "gwPoints": {
-        "1": 76
+        "1": 76,
+        "2": 15
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 152,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 388,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 112,
+          "multiplier": 0
+        },
+        {
+          "element": 212,
+          "multiplier": 0
+        },
+        {
+          "element": 38,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -412,10 +2272,72 @@
       "managerName": "Yuval Yakobi",
       "teamName": "Big Y's",
       "gwPoints": {
-        "1": 57
+        "1": 57,
+        "2": 13
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 418,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 237,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 565,
+          "multiplier": 0
+        },
+        {
+          "element": 87,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     }
   ]
