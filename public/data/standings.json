@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-28T22:41:46.187Z",
+  "dataUpdatedAt": "2026-08-29T03:52:19.072Z",
   "liveGameweek": 2,
   "nextGameweek": 3,
   "nextDeadline": "2026-09-04T17:30:00Z",
@@ -302,7 +302,7 @@
       "teamName": "Gal's Team",
       "gwPoints": {
         "1": 55,
-        "2": 0
+        "2": 31
       },
       "historyFailed": false,
       "livePicks": [
@@ -448,7 +448,7 @@
       "teamName": "heta paleeds",
       "gwPoints": {
         "1": 67,
-        "2": 0
+        "2": 15
       },
       "historyFailed": false,
       "livePicks": [
@@ -667,7 +667,7 @@
       "teamName": "the rivlins",
       "gwPoints": {
         "1": 70,
-        "2": 0
+        "2": 13
       },
       "historyFailed": false,
       "livePicks": [
@@ -886,7 +886,7 @@
       "teamName": "Lion's Team",
       "gwPoints": {
         "1": 47,
-        "2": 0
+        "2": 31
       },
       "historyFailed": false,
       "livePicks": [
@@ -1105,7 +1105,7 @@
       "teamName": "guèhi tzall mavett",
       "gwPoints": {
         "1": 48,
-        "2": 0
+        "2": 18
       },
       "historyFailed": false,
       "livePicks": [
@@ -1543,7 +1543,7 @@
       "teamName": "Liri's team",
       "gwPoints": {
         "1": 57,
-        "2": 0
+        "2": 23
       },
       "historyFailed": false,
       "livePicks": [
@@ -1616,7 +1616,7 @@
       "teamName": "Dor's Team",
       "gwPoints": {
         "1": 48,
-        "2": 0
+        "2": 13
       },
       "historyFailed": false,
       "livePicks": [
@@ -1762,7 +1762,7 @@
       "teamName": "mor7",
       "gwPoints": {
         "1": 55,
-        "2": 0
+        "2": 23
       },
       "historyFailed": false,
       "livePicks": [
@@ -2127,7 +2127,7 @@
       "teamName": "Old Stamford",
       "gwPoints": {
         "1": 63,
-        "2": 0
+        "2": 36
       },
       "historyFailed": false,
       "livePicks": [
