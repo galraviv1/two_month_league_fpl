@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-30T19:33:16.488Z",
+  "dataUpdatedAt": "2026-08-31T23:21:51.760Z",
   "liveGameweek": 2,
   "nextGameweek": 3,
   "nextDeadline": "2026-09-04T17:30:00Z",
@@ -83,7 +83,7 @@
       "teamName": "Game of Stones",
       "gwPoints": {
         "1": 43,
-        "2": 97
+        "2": 108
       },
       "historyFailed": false,
       "livePicks": [
@@ -156,7 +156,7 @@
       "teamName": "70% Water 30% Moises",
       "gwPoints": {
         "1": 50,
-        "2": 74
+        "2": 85
       },
       "historyFailed": false,
       "livePicks": [
@@ -229,7 +229,7 @@
       "teamName": "saka shel kaka",
       "gwPoints": {
         "1": 70,
-        "2": 89
+        "2": 111
       },
       "historyFailed": false,
       "livePicks": [
@@ -302,7 +302,7 @@
       "teamName": "Gal's Team",
       "gwPoints": {
         "1": 55,
-        "2": 63
+        "2": 80
       },
       "historyFailed": false,
       "livePicks": [
@@ -375,7 +375,7 @@
       "teamName": "urdoun till i die",
       "gwPoints": {
         "1": 42,
-        "2": 57
+        "2": 56
       },
       "historyFailed": false,
       "livePicks": [
@@ -448,7 +448,7 @@
       "teamName": "heta paleeds",
       "gwPoints": {
         "1": 67,
-        "2": 80
+        "2": 98
       },
       "historyFailed": false,
       "livePicks": [
@@ -521,7 +521,7 @@
       "teamName": "Fantasy Fanatics",
       "gwPoints": {
         "1": 55,
-        "2": 66
+        "2": 83
       },
       "historyFailed": false,
       "livePicks": [
@@ -594,7 +594,7 @@
       "teamName": "Silva",
       "gwPoints": {
         "1": 30,
-        "2": 72
+        "2": 80
       },
       "historyFailed": false,
       "livePicks": [
@@ -667,7 +667,7 @@
       "teamName": "the rivlins",
       "gwPoints": {
         "1": 70,
-        "2": 102
+        "2": 115
       },
       "historyFailed": false,
       "livePicks": [
@@ -740,7 +740,7 @@
       "teamName": "Konfeld",
       "gwPoints": {
         "1": 53,
-        "2": 84
+        "2": 95
       },
       "historyFailed": false,
       "livePicks": [
@@ -813,7 +813,7 @@
       "teamName": "A Cunha mateta",
       "gwPoints": {
         "1": 57,
-        "2": 68
+        "2": 80
       },
       "historyFailed": false,
       "livePicks": [
@@ -886,7 +886,7 @@
       "teamName": "Lion's Team",
       "gwPoints": {
         "1": 47,
-        "2": 92
+        "2": 103
       },
       "historyFailed": false,
       "livePicks": [
@@ -959,7 +959,7 @@
       "teamName": "lidor",
       "gwPoints": {
         "1": 46,
-        "2": 117
+        "2": 134
       },
       "historyFailed": false,
       "livePicks": [
@@ -1032,7 +1032,7 @@
       "teamName": "FC MOR",
       "gwPoints": {
         "1": 52,
-        "2": 62
+        "2": 79
       },
       "historyFailed": false,
       "livePicks": [
@@ -1105,7 +1105,7 @@
       "teamName": "guèhi tzall mavett",
       "gwPoints": {
         "1": 48,
-        "2": 101
+        "2": 113
       },
       "historyFailed": false,
       "livePicks": [
@@ -1178,7 +1178,7 @@
       "teamName": "Azar Team",
       "gwPoints": {
         "1": 69,
-        "2": 86
+        "2": 103
       },
       "historyFailed": false,
       "livePicks": [
@@ -1251,7 +1251,7 @@
       "teamName": "Back to Back",
       "gwPoints": {
         "1": 55,
-        "2": 49
+        "2": 71
       },
       "historyFailed": false,
       "livePicks": [
@@ -1324,7 +1324,7 @@
       "teamName": "Kinder Mbeumo",
       "gwPoints": {
         "1": 48,
-        "2": 100
+        "2": 113
       },
       "historyFailed": false,
       "livePicks": [
@@ -1397,7 +1397,7 @@
       "teamName": "Amirs team",
       "gwPoints": {
         "1": 48,
-        "2": 99
+        "2": 110
       },
       "historyFailed": false,
       "livePicks": [
@@ -1470,7 +1470,7 @@
       "teamName": "SecondTimers",
       "gwPoints": {
         "1": 60,
-        "2": 74
+        "2": 85
       },
       "historyFailed": false,
       "livePicks": [
@@ -1543,7 +1543,7 @@
       "teamName": "Liri's team",
       "gwPoints": {
         "1": 57,
-        "2": 74
+        "2": 85
       },
       "historyFailed": false,
       "livePicks": [
@@ -1616,7 +1616,7 @@
       "teamName": "Dor's Team",
       "gwPoints": {
         "1": 48,
-        "2": 91
+        "2": 102
       },
       "historyFailed": false,
       "livePicks": [
@@ -1689,7 +1689,7 @@
       "teamName": "cohen 26",
       "gwPoints": {
         "1": 60,
-        "2": 64
+        "2": 75
       },
       "historyFailed": false,
       "livePicks": [
@@ -1762,7 +1762,7 @@
       "teamName": "mor7",
       "gwPoints": {
         "1": 55,
-        "2": 60
+        "2": 71
       },
       "historyFailed": false,
       "livePicks": [
@@ -1835,7 +1835,7 @@
       "teamName": "bukagay",
       "gwPoints": {
         "1": 42,
-        "2": 94
+        "2": 105
       },
       "historyFailed": false,
       "livePicks": [
@@ -1908,7 +1908,7 @@
       "teamName": "Neil's Team",
       "gwPoints": {
         "1": 48,
-        "2": 49
+        "2": 63
       },
       "historyFailed": false,
       "livePicks": [
@@ -1981,7 +1981,7 @@
       "teamName": "Big Red Iraolas",
       "gwPoints": {
         "1": 38,
-        "2": 58
+        "2": 75
       },
       "historyFailed": false,
       "livePicks": [
@@ -2054,7 +2054,7 @@
       "teamName": "Roei's team",
       "gwPoints": {
         "1": 46,
-        "2": 57
+        "2": 68
       },
       "historyFailed": false,
       "livePicks": [
@@ -2127,7 +2127,7 @@
       "teamName": "Old Stamford",
       "gwPoints": {
         "1": 63,
-        "2": 74
+        "2": 85
       },
       "historyFailed": false,
       "livePicks": [
@@ -2200,7 +2200,7 @@
       "teamName": "Mandem FC",
       "gwPoints": {
         "1": 76,
-        "2": 57
+        "2": 68
       },
       "historyFailed": false,
       "livePicks": [
@@ -2273,7 +2273,7 @@
       "teamName": "Big Y's",
       "gwPoints": {
         "1": 57,
-        "2": 100
+        "2": 111
       },
       "historyFailed": false,
       "livePicks": [
