@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-08-31T23:21:51.760Z",
+  "dataUpdatedAt": "2026-09-01T12:12:57.773Z",
   "liveGameweek": 2,
   "nextGameweek": 3,
   "nextDeadline": "2026-09-04T17:30:00Z",
@@ -375,7 +375,7 @@
       "teamName": "urdoun till i die",
       "gwPoints": {
         "1": 42,
-        "2": 56
+        "2": 66
       },
       "historyFailed": false,
       "livePicks": [
@@ -1616,7 +1616,7 @@
       "teamName": "Dor's Team",
       "gwPoints": {
         "1": 48,
-        "2": 102
+        "2": 104
       },
       "historyFailed": false,
       "livePicks": [
@@ -2200,7 +2200,7 @@
       "teamName": "Mandem FC",
       "gwPoints": {
         "1": 76,
-        "2": 68
+        "2": 69
       },
       "historyFailed": false,
       "livePicks": [
