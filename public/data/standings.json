@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-09-04T19:35:57.053Z",
+  "dataUpdatedAt": "2026-09-04T23:31:00.062Z",
   "liveGameweek": 3,
   "nextGameweek": 4,
   "nextDeadline": "2026-09-12T12:30:00Z",
@@ -84,7 +84,7 @@
       "gwPoints": {
         "1": 43,
         "2": 108,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -232,7 +232,7 @@
       "gwPoints": {
         "1": 70,
         "2": 111,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -306,7 +306,7 @@
       "gwPoints": {
         "1": 55,
         "2": 80,
-        "3": 0
+        "3": 11
       },
       "historyFailed": false,
       "livePicks": [
@@ -380,7 +380,7 @@
       "gwPoints": {
         "1": 42,
         "2": 66,
-        "3": 0
+        "3": 6
       },
       "historyFailed": false,
       "livePicks": [
@@ -454,7 +454,7 @@
       "gwPoints": {
         "1": 67,
         "2": 98,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -528,7 +528,7 @@
       "gwPoints": {
         "1": 55,
         "2": 83,
-        "3": 0
+        "3": 24
       },
       "historyFailed": false,
       "livePicks": [
@@ -750,7 +750,7 @@
       "gwPoints": {
         "1": 53,
         "2": 95,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -898,7 +898,7 @@
       "gwPoints": {
         "1": 47,
         "2": 103,
-        "3": 0
+        "3": 13
       },
       "historyFailed": false,
       "livePicks": [
@@ -1046,7 +1046,7 @@
       "gwPoints": {
         "1": 52,
         "2": 79,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -1194,7 +1194,7 @@
       "gwPoints": {
         "1": 69,
         "2": 103,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -1268,7 +1268,7 @@
       "gwPoints": {
         "1": 55,
         "2": 71,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -1416,7 +1416,7 @@
       "gwPoints": {
         "1": 48,
         "2": 110,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -1490,7 +1490,7 @@
       "gwPoints": {
         "1": 60,
         "2": 85,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -1712,7 +1712,7 @@
       "gwPoints": {
         "1": 60,
         "2": 75,
-        "3": 0
+        "3": 16
       },
       "historyFailed": false,
       "livePicks": [
@@ -1786,7 +1786,7 @@
       "gwPoints": {
         "1": 55,
         "2": 71,
-        "3": 0
+        "3": 8
       },
       "historyFailed": false,
       "livePicks": [
@@ -1860,7 +1860,7 @@
       "gwPoints": {
         "1": 42,
         "2": 105,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -2008,7 +2008,7 @@
       "gwPoints": {
         "1": 38,
         "2": 75,
-        "3": 0
+        "3": 13
       },
       "historyFailed": false,
       "livePicks": [
@@ -2082,7 +2082,7 @@
       "gwPoints": {
         "1": 46,
         "2": 68,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
@@ -2156,7 +2156,7 @@
       "gwPoints": {
         "1": 63,
         "2": 85,
-        "3": 0
+        "3": 8
       },
       "historyFailed": false,
       "livePicks": [
@@ -2230,7 +2230,7 @@
       "gwPoints": {
         "1": 76,
         "2": 69,
-        "3": 0
+        "3": 3
       },
       "historyFailed": false,
       "livePicks": [
