@@ -2,10 +2,10 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-09-07T15:22:40.820Z",
-  "liveGameweek": null,
-  "nextGameweek": 4,
-  "nextDeadline": "2026-09-12T12:30:00Z",
+  "dataUpdatedAt": "2026-09-12T14:04:32.059Z",
+  "liveGameweek": 4,
+  "nextGameweek": 5,
+  "nextDeadline": "2026-09-18T17:30:00Z",
   "periods": [
     {
       "id": "aug-sep",
@@ -84,10 +84,72 @@
       "gwPoints": {
         "1": 43,
         "2": 108,
-        "3": 64
+        "3": 64,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 469,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 454,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 418,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 272,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -97,10 +159,72 @@
       "gwPoints": {
         "1": 50,
         "2": 85,
-        "3": 47
+        "3": 47,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 469,
+          "multiplier": 1
+        },
+        {
+          "element": 127,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 2
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        },
+        {
+          "element": 237,
+          "multiplier": 0
+        },
+        {
+          "element": 423,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -110,10 +234,72 @@
       "gwPoints": {
         "1": 70,
         "2": 111,
-        "3": 62
+        "3": 62,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 453,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 418,
+          "multiplier": 0
+        },
+        {
+          "element": 321,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -123,10 +309,72 @@
       "gwPoints": {
         "1": 55,
         "2": 80,
-        "3": 52
+        "3": 52,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 367,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        },
+        {
+          "element": 391,
+          "multiplier": 0
+        },
+        {
+          "element": 565,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -136,10 +384,72 @@
       "gwPoints": {
         "1": 42,
         "2": 66,
-        "3": 34
+        "3": 34,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 89,
+          "multiplier": 1
+        },
+        {
+          "element": 566,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 279,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 483,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 609,
+          "multiplier": 0
+        },
+        {
+          "element": 653,
+          "multiplier": 0
+        },
+        {
+          "element": 626,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -149,10 +459,72 @@
       "gwPoints": {
         "1": 67,
         "2": 98,
-        "3": 51
+        "3": 51,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 10,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 127,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 237,
+          "multiplier": 0
+        },
+        {
+          "element": 387,
+          "multiplier": 0
+        },
+        {
+          "element": 304,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -162,10 +534,72 @@
       "gwPoints": {
         "1": 55,
         "2": 83,
-        "3": 76
+        "3": 76,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 514,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 399,
+          "multiplier": 1
+        },
+        {
+          "element": 367,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 2
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        },
+        {
+          "element": 237,
+          "multiplier": 0
+        },
+        {
+          "element": 534,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -175,10 +609,72 @@
       "gwPoints": {
         "1": 30,
         "2": 80,
-        "3": 43
+        "3": 43,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 367,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        },
+        {
+          "element": 427,
+          "multiplier": 0
+        },
+        {
+          "element": 390,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -188,10 +684,72 @@
       "gwPoints": {
         "1": 70,
         "2": 115,
-        "3": 40
+        "3": 40,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 87,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 3
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 565,
+          "multiplier": 0
+        },
+        {
+          "element": 532,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -201,10 +759,72 @@
       "gwPoints": {
         "1": 53,
         "2": 95,
-        "3": 52
+        "3": 52,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 454,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 87,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -214,10 +834,72 @@
       "gwPoints": {
         "1": 57,
         "2": 80,
-        "3": 69
+        "3": 69,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 116,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 58,
+          "multiplier": 0
+        },
+        {
+          "element": 469,
+          "multiplier": 0
+        },
+        {
+          "element": 552,
+          "multiplier": 0
+        },
+        {
+          "element": 536,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -227,10 +909,72 @@
       "gwPoints": {
         "1": 47,
         "2": 103,
-        "3": 65
+        "3": 65,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 304,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 127,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 59,
+          "multiplier": 0
+        },
+        {
+          "element": 290,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        },
+        {
+          "element": 423,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -240,10 +984,72 @@
       "gwPoints": {
         "1": 46,
         "2": 134,
-        "3": 58
+        "3": 58,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 87,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -253,10 +1059,72 @@
       "gwPoints": {
         "1": 52,
         "2": 79,
-        "3": 52
+        "3": 52,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        },
+        {
+          "element": 542,
+          "multiplier": 0
+        },
+        {
+          "element": 534,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -266,10 +1134,72 @@
       "gwPoints": {
         "1": 48,
         "2": 113,
-        "3": 56
+        "3": 56,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 412,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 58,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        },
+        {
+          "element": 212,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -279,10 +1209,72 @@
       "gwPoints": {
         "1": 69,
         "2": 103,
-        "3": 65
+        "3": 65,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 423,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 212,
+          "multiplier": 0
+        },
+        {
+          "element": 272,
+          "multiplier": 0
+        },
+        {
+          "element": 473,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -292,10 +1284,72 @@
       "gwPoints": {
         "1": 55,
         "2": 71,
-        "3": 57
+        "3": 57,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 111,
+          "multiplier": 0
+        },
+        {
+          "element": 605,
+          "multiplier": 0
+        },
+        {
+          "element": 254,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -305,10 +1359,72 @@
       "gwPoints": {
         "1": 48,
         "2": 113,
-        "3": 53
+        "3": 53,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 412,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 229,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 565,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        },
+        {
+          "element": 290,
+          "multiplier": 0
+        },
+        {
+          "element": 321,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -318,10 +1434,72 @@
       "gwPoints": {
         "1": 48,
         "2": 110,
-        "3": 42
+        "3": 42,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 399,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 2
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 572,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 593,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -331,10 +1509,72 @@
       "gwPoints": {
         "1": 60,
         "2": 85,
-        "3": 41
+        "3": 41,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 58,
+          "multiplier": 0
+        },
+        {
+          "element": 87,
+          "multiplier": 0
+        },
+        {
+          "element": 565,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -344,10 +1584,72 @@
       "gwPoints": {
         "1": 57,
         "2": 85,
-        "3": 70
+        "3": 70,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 350,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 273,
+          "multiplier": 0
+        },
+        {
+          "element": 454,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -357,10 +1659,72 @@
       "gwPoints": {
         "1": 48,
         "2": 104,
-        "3": 57
+        "3": 57,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 28,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 454,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        },
+        {
+          "element": 127,
+          "multiplier": 0
+        },
+        {
+          "element": 321,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -370,10 +1734,72 @@
       "gwPoints": {
         "1": 60,
         "2": 75,
-        "3": 56
+        "3": 56,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 399,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 2
+        },
+        {
+          "element": 250,
+          "multiplier": 0
+        },
+        {
+          "element": 418,
+          "multiplier": 0
+        },
+        {
+          "element": 237,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -383,11 +1809,73 @@
       "gwPoints": {
         "1": 55,
         "2": 71,
-        "3": 67
+        "3": 67,
+        "4": -4
       },
       "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 362,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 377,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 127,
+          "multiplier": 1
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 140,
+          "multiplier": 0
+        },
+        {
+          "element": 427,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 423,
+          "multiplier": 0
+        }
+      ],
+      "liveHitCost": 4
     },
     {
       "entry": 5154980,
@@ -396,10 +1884,72 @@
       "gwPoints": {
         "1": 42,
         "2": 105,
-        "3": 58
+        "3": 58,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 45,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 453,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 567,
+          "multiplier": 0
+        },
+        {
+          "element": 460,
+          "multiplier": 0
+        },
+        {
+          "element": 230,
+          "multiplier": 0
+        },
+        {
+          "element": 175,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -409,10 +1959,72 @@
       "gwPoints": {
         "1": 48,
         "2": 63,
-        "3": 56
+        "3": 56,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 388,
+          "multiplier": 1
+        },
+        {
+          "element": 397,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 591,
+          "multiplier": 1
+        },
+        {
+          "element": 480,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 586,
+          "multiplier": 0
+        },
+        {
+          "element": 260,
+          "multiplier": 0
+        },
+        {
+          "element": 303,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -422,10 +2034,72 @@
       "gwPoints": {
         "1": 38,
         "2": 75,
-        "3": 69
+        "3": 69,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 499,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 369,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 481,
+          "multiplier": 0
+        },
+        {
+          "element": 260,
+          "multiplier": 0
+        },
+        {
+          "element": 539,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -435,10 +2109,72 @@
       "gwPoints": {
         "1": 46,
         "2": 68,
-        "3": 41
+        "3": 41,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 10,
+          "multiplier": 1
+        },
+        {
+          "element": 87,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 12,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 480,
+          "multiplier": 1
+        },
+        {
+          "element": 106,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 295,
+          "multiplier": 0
+        },
+        {
+          "element": 115,
+          "multiplier": 0
+        },
+        {
+          "element": 279,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -448,10 +2184,72 @@
       "gwPoints": {
         "1": 63,
         "2": 85,
-        "3": 66
+        "3": 66,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 94,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 2
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 236,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 464,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 391,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        },
+        {
+          "element": 397,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -461,10 +2259,72 @@
       "gwPoints": {
         "1": 76,
         "2": 69,
-        "3": 58
+        "3": 58,
+        "4": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 388,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 152,
+          "multiplier": 0
+        },
+        {
+          "element": 212,
+          "multiplier": 0
+        },
+        {
+          "element": 38,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -474,11 +2334,73 @@
       "gwPoints": {
         "1": 57,
         "2": 111,
-        "3": 50
+        "3": 50,
+        "4": -4
       },
       "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 87,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 565,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 2
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        },
+        {
+          "element": 237,
+          "multiplier": 0
+        },
+        {
+          "element": 418,
+          "multiplier": 0
+        }
+      ],
+      "liveHitCost": 4
     }
   ]
 }
