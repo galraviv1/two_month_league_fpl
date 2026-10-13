@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-10-12T23:54:35.851Z",
+  "dataUpdatedAt": "2026-10-13T11:59:00.053Z",
   "liveGameweek": 6,
   "nextGameweek": 7,
   "nextDeadline": "2026-10-17T10:00:00Z",
@@ -241,7 +241,7 @@
         "3": 62,
         "4": 89,
         "5": 47,
-        "6": 55
+        "6": 67
       },
       "historyFailed": false,
       "livePicks": [
@@ -1319,7 +1319,7 @@
         "3": 57,
         "4": 78,
         "5": 35,
-        "6": 62
+        "6": 67
       },
       "historyFailed": false,
       "livePicks": [
@@ -1550,7 +1550,7 @@
         "3": 41,
         "4": 98,
         "5": 48,
-        "6": 78
+        "6": 82
       },
       "historyFailed": false,
       "livePicks": [
@@ -2012,7 +2012,7 @@
         "3": 56,
         "4": 80,
         "5": 50,
-        "6": 40
+        "6": 45
       },
       "historyFailed": false,
       "livePicks": [
@@ -2320,7 +2320,7 @@
         "3": 58,
         "4": 67,
         "5": 54,
-        "6": 60
+        "6": 61
       },
       "historyFailed": false,
       "livePicks": [
