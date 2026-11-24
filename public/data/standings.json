@@ -2,7 +2,7 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-11-23T02:43:07.813Z",
+  "dataUpdatedAt": "2026-11-24T06:34:04.565Z",
   "liveGameweek": 11,
   "nextGameweek": 12,
   "nextDeadline": "2026-11-27T18:30:00Z",
@@ -256,7 +256,7 @@
         "8": 56,
         "9": 70,
         "10": 94,
-        "11": 40
+        "11": 42
       },
       "historyFailed": false,
       "livePicks": [
@@ -420,7 +420,7 @@
         "8": 47,
         "9": 52,
         "10": 50,
-        "11": 35
+        "11": 47
       },
       "historyFailed": false,
       "livePicks": [
@@ -502,7 +502,7 @@
         "8": 54,
         "9": 59,
         "10": 59,
-        "11": 33
+        "11": 35
       },
       "historyFailed": false,
       "livePicks": [
@@ -994,7 +994,7 @@
         "8": 40,
         "9": 61,
         "10": 89,
-        "11": 34
+        "11": 36
       },
       "historyFailed": false,
       "livePicks": [
@@ -1322,7 +1322,7 @@
         "8": 46,
         "9": 60,
         "10": 53,
-        "11": 31
+        "11": 27
       },
       "historyFailed": false,
       "livePicks": [
@@ -1732,7 +1732,7 @@
         "8": 51,
         "9": 61,
         "10": 79,
-        "11": 29
+        "11": 31
       },
       "historyFailed": false,
       "livePicks": [
@@ -2060,7 +2060,7 @@
         "8": 57,
         "9": 50,
         "10": 69,
-        "11": 35
+        "11": 37
       },
       "historyFailed": false,
       "livePicks": [
@@ -2142,7 +2142,7 @@
         "8": 52,
         "9": 59,
         "10": 45,
-        "11": 28
+        "11": 29
       },
       "historyFailed": false,
       "livePicks": [
@@ -2388,7 +2388,7 @@
         "8": 52,
         "9": 55,
         "10": 73,
-        "11": 42
+        "11": 43
       },
       "historyFailed": false,
       "livePicks": [
@@ -2470,7 +2470,7 @@
         "8": 29,
         "9": 54,
         "10": 36,
-        "11": 26
+        "11": 32
       },
       "historyFailed": false,
       "livePicks": [
