@@ -2,10 +2,10 @@
   "season": "2026/27",
   "leagueId": 367147,
   "leagueName": "The English Game",
-  "dataUpdatedAt": "2026-11-24T18:17:13.416Z",
-  "liveGameweek": null,
-  "nextGameweek": 12,
-  "nextDeadline": "2026-11-27T18:30:00Z",
+  "dataUpdatedAt": "2026-11-27T22:10:14.120Z",
+  "liveGameweek": 12,
+  "nextGameweek": 13,
+  "nextDeadline": "2026-12-01T18:30:00Z",
   "periods": [
     {
       "id": "aug-sep",
@@ -92,10 +92,72 @@
         "8": 36,
         "9": 57,
         "10": 59,
-        "11": 36
+        "11": 36,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 57,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 60,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 2
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 183,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 138,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 1,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 400,
+          "multiplier": 0
+        },
+        {
+          "element": 259,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -113,10 +175,72 @@
         "8": 35,
         "9": 54,
         "10": 60,
-        "11": 27
+        "11": 27,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 2
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 399,
+          "multiplier": 1
+        },
+        {
+          "element": 53,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 138,
+          "multiplier": 1
+        },
+        {
+          "element": 1,
+          "multiplier": 0
+        },
+        {
+          "element": 391,
+          "multiplier": 0
+        },
+        {
+          "element": 268,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -134,10 +258,72 @@
         "8": 56,
         "9": 70,
         "10": 94,
-        "11": 42
+        "11": 42,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 566,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 2
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 411,
+          "multiplier": 0
+        },
+        {
+          "element": 112,
+          "multiplier": 0
+        },
+        {
+          "element": 453,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -155,10 +341,72 @@
         "8": 47,
         "9": 67,
         "10": 60,
-        "11": 30
+        "11": 30,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 579,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 68,
+          "multiplier": 0
+        },
+        {
+          "element": 268,
+          "multiplier": 0
+        },
+        {
+          "element": 304,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -176,10 +424,72 @@
         "8": 47,
         "9": 52,
         "10": 50,
-        "11": 47
+        "11": 47,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 88,
+          "multiplier": 1
+        },
+        {
+          "element": 566,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 2
+        },
+        {
+          "element": 627,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 399,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 26,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 301,
+          "multiplier": 0
+        },
+        {
+          "element": 609,
+          "multiplier": 0
+        },
+        {
+          "element": 653,
+          "multiplier": 0
+        },
+        {
+          "element": 626,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -197,10 +507,72 @@
         "8": 54,
         "9": 59,
         "10": 59,
-        "11": 35
+        "11": 35,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 173,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 2
+        },
+        {
+          "element": 183,
+          "multiplier": 1
+        },
+        {
+          "element": 268,
+          "multiplier": 1
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 623,
+          "multiplier": 0
+        },
+        {
+          "element": 411,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -218,10 +590,72 @@
         "8": 31,
         "9": 53,
         "10": 61,
-        "11": 32
+        "11": 32,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 2
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 53,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 138,
+          "multiplier": 1
+        },
+        {
+          "element": 250,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        },
+        {
+          "element": 391,
+          "multiplier": 0
+        },
+        {
+          "element": 367,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -239,10 +673,72 @@
         "8": 42,
         "9": 51,
         "10": 61,
-        "11": 34
+        "11": 34,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 449,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 588,
+          "multiplier": 1
+        },
+        {
+          "element": 512,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 627,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 250,
+          "multiplier": 0
+        },
+        {
+          "element": 15,
+          "multiplier": 0
+        },
+        {
+          "element": 390,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -260,10 +756,72 @@
         "8": 31,
         "9": 65,
         "10": 63,
-        "11": 37
+        "11": 37,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 480,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 2
+        },
+        {
+          "element": 623,
+          "multiplier": 0
+        },
+        {
+          "element": 183,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -281,10 +839,72 @@
         "8": 64,
         "9": 63,
         "10": 65,
-        "11": 37
+        "11": 37,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 385,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 127,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 480,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 2
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 426,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -302,10 +922,72 @@
         "8": 62,
         "9": 63,
         "10": 52,
-        "11": 37
+        "11": 37,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 250,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 2
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 58,
+          "multiplier": 0
+        },
+        {
+          "element": 400,
+          "multiplier": 0
+        },
+        {
+          "element": 94,
+          "multiplier": 0
+        },
+        {
+          "element": 305,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -323,10 +1005,72 @@
         "8": 40,
         "9": 61,
         "10": 89,
-        "11": 36
+        "11": 36,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 566,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 53,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -344,10 +1088,72 @@
         "8": 55,
         "9": 57,
         "10": 69,
-        "11": 39
+        "11": 39,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 572,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 2
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 1,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 399,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -365,10 +1171,72 @@
         "8": 45,
         "9": 73,
         "10": 72,
-        "11": 27
+        "11": 27,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 2
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 411,
+          "multiplier": 0
+        },
+        {
+          "element": 94,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -386,10 +1254,72 @@
         "8": 45,
         "9": 60,
         "10": 54,
-        "11": 31
+        "11": 31,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 362,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 2
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 138,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 250,
+          "multiplier": 0
+        },
+        {
+          "element": 453,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        },
+        {
+          "element": 256,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -407,10 +1337,72 @@
         "8": 46,
         "9": 60,
         "10": 53,
-        "11": 27
+        "11": 27,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 572,
+          "multiplier": 1
+        },
+        {
+          "element": 356,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 173,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 268,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 1,
+          "multiplier": 0
+        },
+        {
+          "element": 286,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        },
+        {
+          "element": 229,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -428,10 +1420,72 @@
         "8": 68,
         "9": 68,
         "10": 56,
-        "11": 25
+        "11": 25,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 391,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 78,
+          "multiplier": 1
+        },
+        {
+          "element": 156,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 111,
+          "multiplier": 0
+        },
+        {
+          "element": 542,
+          "multiplier": 0
+        },
+        {
+          "element": 254,
+          "multiplier": 0
+        },
+        {
+          "element": 173,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -449,10 +1503,72 @@
         "8": 51,
         "9": 63,
         "10": 64,
-        "11": 31
+        "11": 31,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 385,
+          "multiplier": 1
+        },
+        {
+          "element": 4,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 1
+        },
+        {
+          "element": 60,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 2
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 124,
+          "multiplier": 0
+        },
+        {
+          "element": 40,
+          "multiplier": 0
+        },
+        {
+          "element": 183,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -470,11 +1586,73 @@
         "8": 47,
         "9": 69,
         "10": 63,
-        "11": 26
+        "11": 26,
+        "12": -4
       },
       "historyFailed": false,
-      "livePicks": [],
-      "liveHitCost": 0
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 127,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 2
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 1,
+          "multiplier": 0
+        },
+        {
+          "element": 261,
+          "multiplier": 0
+        },
+        {
+          "element": 399,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        }
+      ],
+      "liveHitCost": 4
     },
     {
       "entry": 3801415,
@@ -491,10 +1669,72 @@
         "8": 47,
         "9": 58,
         "10": 62,
-        "11": 34
+        "11": 34,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 2
+        },
+        {
+          "element": 58,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 565,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -512,10 +1752,72 @@
         "8": 51,
         "9": 61,
         "10": 79,
-        "11": 31
+        "11": 31,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 2
+        },
+        {
+          "element": 249,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 411,
+          "multiplier": 0
+        },
+        {
+          "element": 236,
+          "multiplier": 0
+        },
+        {
+          "element": 278,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -533,10 +1835,72 @@
         "8": 49,
         "9": 57,
         "10": 75,
-        "11": 54
+        "11": 54,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 2
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 109,
+          "multiplier": 0
+        },
+        {
+          "element": 449,
+          "multiplier": 0
+        },
+        {
+          "element": 15,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -554,10 +1918,72 @@
         "8": 63,
         "9": 48,
         "10": 71,
-        "11": 38
+        "11": 38,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 31,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 2
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 480,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 250,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 411,
+          "multiplier": 0
+        },
+        {
+          "element": 254,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -575,10 +2001,72 @@
         "8": 49,
         "9": 59,
         "10": 88,
-        "11": 28
+        "11": 28,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 504,
+          "multiplier": 1
+        },
+        {
+          "element": 362,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 127,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 15,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 2
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 453,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -596,10 +2084,72 @@
         "8": 57,
         "9": 50,
         "10": 69,
-        "11": 37
+        "11": 37,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 597,
+          "multiplier": 1
+        },
+        {
+          "element": 499,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 336,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 379,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 346,
+          "multiplier": 1
+        },
+        {
+          "element": 57,
+          "multiplier": 0
+        },
+        {
+          "element": 366,
+          "multiplier": 0
+        },
+        {
+          "element": 202,
+          "multiplier": 0
+        },
+        {
+          "element": 534,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -617,10 +2167,72 @@
         "8": 52,
         "9": 59,
         "10": 45,
-        "11": 29
+        "11": 29,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 1,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 512,
+          "multiplier": 1
+        },
+        {
+          "element": 94,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 591,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 138,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 480,
+          "multiplier": 0
+        },
+        {
+          "element": 586,
+          "multiplier": 0
+        },
+        {
+          "element": 303,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -638,10 +2250,72 @@
         "8": 56,
         "9": 48,
         "10": 61,
-        "11": 28
+        "11": 28,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 499,
+          "multiplier": 1
+        },
+        {
+          "element": 330,
+          "multiplier": 1
+        },
+        {
+          "element": 60,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 1
+        },
+        {
+          "element": 366,
+          "multiplier": 1
+        },
+        {
+          "element": 379,
+          "multiplier": 2
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 111,
+          "multiplier": 0
+        },
+        {
+          "element": 68,
+          "multiplier": 0
+        },
+        {
+          "element": 306,
+          "multiplier": 0
+        },
+        {
+          "element": 279,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -659,10 +2333,72 @@
         "8": 72,
         "9": 62,
         "10": 54,
-        "11": 37
+        "11": 37,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 496,
+          "multiplier": 1
+        },
+        {
+          "element": 332,
+          "multiplier": 1
+        },
+        {
+          "element": 279,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 426,
+          "multiplier": 2
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 526,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 295,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 53,
+          "multiplier": 0
+        },
+        {
+          "element": 10,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -680,10 +2416,72 @@
         "8": 52,
         "9": 55,
         "10": 73,
-        "11": 43
+        "11": 43,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 109,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 2
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 94,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 1
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 79,
+          "multiplier": 1
+        },
+        {
+          "element": 496,
+          "multiplier": 0
+        },
+        {
+          "element": 31,
+          "multiplier": 0
+        },
+        {
+          "element": 399,
+          "multiplier": 0
+        },
+        {
+          "element": 8,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -701,10 +2499,72 @@
         "8": 29,
         "9": 54,
         "10": 36,
-        "11": 32
+        "11": 32,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 82,
+          "multiplier": 1
+        },
+        {
+          "element": 112,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 388,
+          "multiplier": 1
+        },
+        {
+          "element": 427,
+          "multiplier": 1
+        },
+        {
+          "element": 154,
+          "multiplier": 1
+        },
+        {
+          "element": 557,
+          "multiplier": 1
+        },
+        {
+          "element": 368,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 552,
+          "multiplier": 1
+        },
+        {
+          "element": 165,
+          "multiplier": 1
+        },
+        {
+          "element": 497,
+          "multiplier": 0
+        },
+        {
+          "element": 152,
+          "multiplier": 0
+        },
+        {
+          "element": 212,
+          "multiplier": 0
+        },
+        {
+          "element": 38,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     },
     {
@@ -722,10 +2582,72 @@
         "8": 43,
         "9": 48,
         "10": 63,
-        "11": 36
+        "11": 36,
+        "12": 0
       },
       "historyFailed": false,
-      "livePicks": [],
+      "livePicks": [
+        {
+          "element": 385,
+          "multiplier": 1
+        },
+        {
+          "element": 115,
+          "multiplier": 1
+        },
+        {
+          "element": 566,
+          "multiplier": 1
+        },
+        {
+          "element": 8,
+          "multiplier": 1
+        },
+        {
+          "element": 334,
+          "multiplier": 1
+        },
+        {
+          "element": 124,
+          "multiplier": 1
+        },
+        {
+          "element": 399,
+          "multiplier": 1
+        },
+        {
+          "element": 40,
+          "multiplier": 1
+        },
+        {
+          "element": 68,
+          "multiplier": 1
+        },
+        {
+          "element": 411,
+          "multiplier": 2
+        },
+        {
+          "element": 166,
+          "multiplier": 1
+        },
+        {
+          "element": 623,
+          "multiplier": 0
+        },
+        {
+          "element": 277,
+          "multiplier": 0
+        },
+        {
+          "element": 268,
+          "multiplier": 0
+        },
+        {
+          "element": 138,
+          "multiplier": 0
+        }
+      ],
       "liveHitCost": 0
     }
   ]
